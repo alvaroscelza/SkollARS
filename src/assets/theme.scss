@@ -139,12 +139,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #8a0303;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #ae2881;
+    color: #8a0303;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -1616,7 +1615,6 @@ textarea.form-control {
           user-select: none;
   border: 1px solid transparent;
   padding: 0.3125rem 1rem;
-  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -1638,27 +1636,25 @@ fieldset:disabled a.btn {
   pointer-events: none; }
 
 .btn-primary {
+  color: #8a0303;
+  background-color: transparent;
+  border-color: #8a0303;
+  border-radius: 2rem;
+  padding: 16px 20px;
+}
+.btn-primary:hover {
   color: #fff;
   background-color: #8a0303;
-  border-color: #8a0303; }
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #cd2f98;
-    border-color: #c22d90; }
-  .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(214, 76, 168, 0.5); }
-  .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: #8a0303;
-    border-color: #8a0303; }
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #c22d90;
-    border-color: #b82a89; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(214, 76, 168, 0.5); }
+  border-color: #8a0303; 
+}
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem #8a0303; 
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #8a0303;
+  border-color: #8a0303; 
+}
 
 .btn-secondary {
   color: #fff;
@@ -2010,7 +2006,7 @@ fieldset:disabled a.btn {
   color: #8a0303;
   background-color: transparent; }
   .btn-link:hover {
-    color: #ae2881;
+    color: #8a0303;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent; }
@@ -2021,12 +2017,6 @@ fieldset:disabled a.btn {
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d;
     pointer-events: none; }
-
-.btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.25rem; }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.125rem 0.5rem;
@@ -3019,12 +3009,10 @@ input[type="button"].btn-block {
   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: #152a49; }
 
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(21, 42, 73, 0.5); }
-  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: #152a49; }
-  .navbar-light .navbar-nav .nav-link.disabled {
-    color: rgba(21, 42, 73, 0.25); }
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #152a49; }
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: rgba(21, 42, 73, 0.25); }
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
@@ -6260,9 +6248,6 @@ a.text-danger:hover, a.text-danger:focus {
 a.text-light:hover, a.text-light:focus {
   color: #d6dbd9 !important; }
 
-.text-dark {
-  color: #474543 !important; }
-
 a.text-dark:hover, a.text-dark:focus {
   color: #2d2c2a !important; }
 
@@ -7967,9 +7952,9 @@ a.card.hover-effect {
 
 .icon {
   width: auto;
-  height: 3rem; }
+  height: 4rem; }
   .icon.icon-lg {
-    height: 4.5rem; }
+    height: 6rem; }
   .icon.icon-sm {
     height: 2.25rem; }
   .icon path {
@@ -8717,18 +8702,7 @@ img.zoom-img {
 .icon.text-dark path {
   fill: #474543; }
 
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(71, 69, 67, 0.5); }
-
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #474543; }
-
 .btn-light {
   color: #8a0303; }
 
-.btn-light:hover, .btn-light:active, .btn-light:focus {
-  color: #bd338f !important; }
-
 /* End of general theme colors */
-
-/*# sourceMappingURL=theme.css.map */

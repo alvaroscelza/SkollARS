@@ -10,7 +10,7 @@ const Header = () => {
                 </button>
                 <div id="main-nav" className="collapse navbar-collapse justify-content-end navMenu">
                     <ul className="navbar-nav">
-                        <li className="nav-item"><a className="nav-link h5" href="/">Home</a></li>
+                        <li className="nav-item"><a className="h5" href="/">Home</a></li>
                     </ul>
                 </div>
             </div>

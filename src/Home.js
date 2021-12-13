@@ -67,7 +67,7 @@ const Header = () => {
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-4">
                             <div class="text-center text-md-left">
-                                <img src="/design_thinking.png" alt="" class="icon flex-shrink-0 mb-1" />
+                                <img src="/design_thinking.png" alt="" class="icon icon-lg flex-shrink-0 mb-1" />
                                 <div>
                                     <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">Design Thinking</h5>
                                     <p class="text-center text-md-left pr-md-2">
@@ -80,7 +80,7 @@ const Header = () => {
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-4">
                             <div class="text-center text-md-left">
-                                <img src="/finance_engineering.png" alt="" class="icon flex-shrink-0 mb-1" />
+                                <img src="/finance_engineering.png" alt="" class="icon icon-lg flex-shrink-0 mb-1" />
                                 <div>
                                     <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">Optimización De Negocios</h5>
                                     <p class="text-center text-md-left pr-md-2">
@@ -93,7 +93,7 @@ const Header = () => {
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-4">
                             <div class="text-center text-md-left">
-                                <img src="/information_techs.png" alt="" class="icon flex-shrink-0 mb-1" />
+                                <img src="/information_techs.png" alt="" class="icon icon-lg flex-shrink-0 mb-1" />
                                 <div>
                                     <h5 class="h4 mb-2 mt-2 font-weight-bold text-center text-md-left">Sistemas De Información</h5>
                                     <p class="text-center text-md-left pr-md-2">
