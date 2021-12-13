@@ -14,7 +14,7 @@ const Header = () => {
                                 <h2 className="h2 text-dark mb-5">No importa lo que necesites, nosotros podemos construirlo.</h2>
                             </div>
                             <div className="col-12 justify-content-center">
-                                <a className="btn btn-primary btn-lg m-2 aos-init aos-animate" href="/parachains" data-aos="fade">
+                                <a className="btn btn-primary btn-lg m-2 aos-init aos-animate" href="/" data-aos="fade">
                                     Contacto
                                 </a>
                             </div>
@@ -23,9 +23,9 @@ const Header = () => {
                 </div>
             </section>
 
-            <section id="home-network" class="bg-white pt-0">
+            <section class="bg-white pt-0">
                 <div class="container">
-                    <div class="row justify-content-center mb-4">
+                    <div class="row justify-content-center">
                         <div class="col-12 col-md-6 col-lg-4 mb-4">
                             <div class="text-center text-md-left">
                                 <img src="/one_gear.png" alt="" class="icon flex-shrink-0 mb-1" />
@@ -65,7 +65,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="text-center text-md-left">
                                 <img src="/design_thinking.png" alt="" class="icon icon-lg flex-shrink-0 mb-1" />
                                 <div>
@@ -78,7 +78,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="text-center text-md-left">
                                 <img src="/finance_engineering.png" alt="" class="icon icon-lg flex-shrink-0 mb-1" />
                                 <div>
@@ -91,7 +91,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="text-center text-md-left">
                                 <img src="/information_techs.png" alt="" class="icon icon-lg flex-shrink-0 mb-1" />
                                 <div>
@@ -105,11 +105,50 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center pt-3">
-                        <div class="col col-12 col-md-6 text-center">
-                            <span class="h2 d-block mb-4">Learn more about Polkadot's technology</span>
-                            <a class="btn btn-primary btn-lg" href="/technology">Discover Polkadot</a>
+                </div>
+            </section>
+
+            <section class="pt-0 bg-white">
+                <div className="container">
+                    <div className="row text-center justify-content-center">
+                        <div className="col-12">
+                            <h2 className="h2 text-dark">Conectemos.</h2>
+                            <p>Por favor llena el siguiente formulario, y nos pondremos en contacto.</p>
+                            <p>&nbsp;</p>
                         </div>
+                    </div>
+                    <div className="row text-center justify-content-center">
+                        <form className="hs-form">
+                            <div class="form-group text-left">
+                                <label for="name">
+                                    <span>Nombre:</span>
+                                    <span style={{ color: "#8a0303" }}>*</span>
+                                </label>
+                                <input type="text" class="form-control" id="name" required />
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="email">
+                                    <span>Email:</span>
+                                    <span style={{ color: "#8a0303" }}>*</span>
+                                </label>
+                                <input type="email" class="form-control" id="email" required />
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="topic">
+                                    <span>Asunto:</span>
+                                    <span style={{ color: "#8a0303" }}>*</span>
+                                </label>
+                                <input type="text" class="form-control" id="topic" required />
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="meesage">
+                                    <span>Mensaje:</span>
+                                    <span style={{ color: "#8a0303" }}>*</span>
+                                </label>
+                                <textarea class="form-control" id="meesage" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
                     </div>
                 </div>
             </section>
