@@ -14,7 +14,7 @@ const Header = () => {
                                 <h2 className="h2 text-dark mb-5">No importa lo que necesites, nosotros podemos construirlo.</h2>
                             </div>
                             <div className="col-12 justify-content-center">
-                                <a className="btn btn-primary btn-lg m-2 aos-init aos-animate" href="/" data-aos="fade">
+                                <a className="btn btn-primary btn-lg m-2 aos-init aos-animate" href="#contact-form" data-aos="fade">
                                     Contacto
                                 </a>
                             </div>
@@ -118,7 +118,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="row text-center justify-content-center">
-                        <form className="hs-form">
+                        <form id="contact-form" className="hs-form" action="mailto:alvaroscelza@gmail.com" method="POST" encType="multipart/form-data" >
                             <div class="form-group text-left">
                                 <label for="name">
                                     <span>Nombre:</span>
@@ -152,7 +152,7 @@ const Header = () => {
                     </div>
                 </div>
             </section>
-        </Fragment>
+        </Fragment >
     );
 }
 
