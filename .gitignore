@@ -14,6 +14,9 @@
 # ide
 /.idea/*
 
+# secrets
+.env
+
 # misc
 .DS_Store
 .env.local
