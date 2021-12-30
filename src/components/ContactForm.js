@@ -49,7 +49,12 @@ const ContactForm = () => {
                 <span>Nombre:</span>
                 <span style={{ color: "#8a0303" }}>*</span>
               </label>
-              <input type="text" className="form-control" id="name" required />
+              <input
+                type="text"
+                className="form-control"
+                name="name"
+                required
+              />
             </div>
             <div className="form-group text-left">
               <label htmlFor="email">
@@ -59,7 +64,7 @@ const ContactForm = () => {
               <input
                 type="email"
                 className="form-control"
-                id="email"
+                name="email"
                 required
               />
             </div>
@@ -68,14 +73,19 @@ const ContactForm = () => {
                 <span>Asunto:</span>
                 <span style={{ color: "#8a0303" }}>*</span>
               </label>
-              <input type="text" className="form-control" id="topic" required />
+              <input
+                type="text"
+                className="form-control"
+                name="topic"
+                required
+              />
             </div>
             <div className="form-group text-left">
-              <label htmlFor="meesage">
+              <label htmlFor="message">
                 <span>Mensaje:</span>
                 <span style={{ color: "#8a0303" }}>*</span>
               </label>
-              <textarea className="form-control" id="meesage" required />
+              <textarea className="form-control" name="message" required />
             </div>
             <button type="submit" className="btn btn-primary">
               Enviar Mensaje
