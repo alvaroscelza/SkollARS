@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-require('dotenv').config();
 
 const ContactForm = () => {
     const form = useRef();
@@ -8,7 +7,7 @@ const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_vk007nc', 'contact_form', form.current, process.env.EMAILJS_USER_ID)
+        emailjs.sendForm('service_vk007nc', 'contact_form', form.current, process.env.REACT_APP_EMAILJS_USER_ID)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
