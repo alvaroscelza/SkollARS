@@ -13,6 +13,7 @@ h1 {
 
 p {
   color: #6c757d;
+  padding-right: 0.75rem;
 }
 
 section {
@@ -31,11 +32,17 @@ section {
   padding: 16px 20px;
 }
 
+.btn-primary:hover {
+  color: #fff;
+  background-color: #8a0303;
+  border-color: #8a0303;
+}
+
 .container {
   max-width: 1140px;
 }
 
-.foter {
+.footer {
   color: #6c757d;
   background-color: #e9ecef;
 }

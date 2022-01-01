@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './assets/theme.scss';
-import Header from './components/Header';
-import Home from './components/Home';
-import Footer from './components/Footer';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./assets/custom.scss";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,5 +11,5 @@ ReactDOM.render(
     <Home />
     <Footer />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

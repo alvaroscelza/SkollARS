@@ -5,7 +5,7 @@ import Product from "./Product";
 const Header = () => {
   return (
     <Fragment>
-      <section className="pt-0 bg-white">
+      <section className="pt-0">
         <div className="height-40 py-3 py-md-4">
           <div className="container">
             <div className="row text-center justify-content-center">
@@ -24,7 +24,7 @@ const Header = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white pt-0">
+      <section className="pt-0">
         <div className="container">
           <div className="row justify-content-center">
             <Product
@@ -56,8 +56,7 @@ const Header = () => {
               text={
                 <Fragment>
                   Desarrollo de Software completamente a medida. No importa lo que necesites, lo construiremos para ti,
-                  con las funcionalidades que tu quieres y de laimport Product from './Product'; forma que tu quieres.{" "}
-                  <br />
+                  con las funcionalidades que tu quieres y de la forma que tu quieres. <br />
                   <br />
                   Incluye ingeniería de requerimientos, donde te ayudaremos a explorar las mejores ideas para que tu
                   nuevo software potencie tu negocio lo máximo posible.
@@ -84,8 +83,7 @@ const Header = () => {
               text={
                 <Fragment>
                   Analizamos tu negocio en busca de mejoras tecnológicas de las que puedas beneficiarte. El análisis es
-                  superficial y está orientado a detectar mejoras sustanciales de bajo costo y alto impacto.
-                  <br />
+                  superficial y está orientado a detectar mejoras sustanciales de bajo costo y alto impacto. <br />
                   <br />
                   Es ideal para pequeños negocios o emprendimientos personales.
                 </Fragment>
@@ -101,7 +99,7 @@ const Header = () => {
                   profundo que la Optimización de Negocio. Se busca una mejora sustancial de la estrategia de negocio de
                   tu empresa, analizando: sistema de creencias, estrategia genérica, análisis de fuerzas de Porter,
                   análisis de la Cadena de Valor, posición en TI/SI, análisis FODA, análisis ITSGA, identificación de
-                  ITSAs <br />
+                  ITSAs. <br />
                   <br />
                   Este producto está pensado para medianos o grandes negocios.
                 </Fragment>
