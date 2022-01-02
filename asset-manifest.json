@@ -1,20 +1,27 @@
 {
   "files": {
     "main.css": "/SkollARS/static/css/main.2e713371.chunk.css",
-    "main.js": "/SkollARS/static/js/main.855b7596.chunk.js",
-    "main.js.map": "/SkollARS/static/js/main.855b7596.chunk.js.map",
+    "main.js": "/SkollARS/static/js/main.b93d0c5c.chunk.js",
+    "main.js.map": "/SkollARS/static/js/main.b93d0c5c.chunk.js.map",
     "runtime-main.js": "/SkollARS/static/js/runtime-main.8674bff7.js",
     "runtime-main.js.map": "/SkollARS/static/js/runtime-main.8674bff7.js.map",
     "static/js/2.9d00740f.chunk.js": "/SkollARS/static/js/2.9d00740f.chunk.js",
     "static/js/2.9d00740f.chunk.js.map": "/SkollARS/static/js/2.9d00740f.chunk.js.map",
     "index.html": "/SkollARS/index.html",
     "static/css/main.2e713371.chunk.css.map": "/SkollARS/static/css/main.2e713371.chunk.css.map",
-    "static/js/2.9d00740f.chunk.js.LICENSE.txt": "/SkollARS/static/js/2.9d00740f.chunk.js.LICENSE.txt"
+    "static/js/2.9d00740f.chunk.js.LICENSE.txt": "/SkollARS/static/js/2.9d00740f.chunk.js.LICENSE.txt",
+    "static/media/design_thinking.135cceff.png": "/SkollARS/static/media/design_thinking.135cceff.png",
+    "static/media/finance_engineering.96371755.png": "/SkollARS/static/media/finance_engineering.96371755.png",
+    "static/media/information_techs.676a61b3.png": "/SkollARS/static/media/information_techs.676a61b3.png",
+    "static/media/named_logo.a95c4360.png": "/SkollARS/static/media/named_logo.a95c4360.png",
+    "static/media/one_gear.873ca75f.png": "/SkollARS/static/media/one_gear.873ca75f.png",
+    "static/media/three_gears.b7f7a020.png": "/SkollARS/static/media/three_gears.b7f7a020.png",
+    "static/media/two_gears.f7271a02.png": "/SkollARS/static/media/two_gears.f7271a02.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8674bff7.js",
     "static/js/2.9d00740f.chunk.js",
     "static/css/main.2e713371.chunk.css",
-    "static/js/main.855b7596.chunk.js"
+    "static/js/main.b93d0c5c.chunk.js"
   ]
 }
