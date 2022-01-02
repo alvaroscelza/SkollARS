@@ -1,6 +1,12 @@
 import { Fragment } from "react/cjs/react.production.min";
 import ContactForm from "./ContactForm";
 import Product from "./Product";
+import one_gear from "../images/one_gear.png";
+import two_gears from "../images/two_gears.png";
+import three_gears from "../images/three_gears.png";
+import design_thinking from "../images/design_thinking.png";
+import finance_engineering from "../images/finance_engineering.png";
+import information_techs from "../images/information_techs.png";
 
 const Header = () => {
   return (
@@ -28,7 +34,7 @@ const Header = () => {
         <div className="container">
           <div className="row justify-content-center">
             <Product
-              image_file_name="/one_gear.png"
+              image={one_gear}
               title="Soluciones Estándar"
               text={
                 <Fragment>
@@ -39,7 +45,7 @@ const Header = () => {
               }
             />
             <Product
-              image_file_name="/two_gears.png"
+              image={two_gears}
               title="Soluciones Prediseñadas"
               text={
                 <Fragment>
@@ -51,7 +57,7 @@ const Header = () => {
               }
             />
             <Product
-              image_file_name="/three_gears.png"
+              image={three_gears}
               title="Desarrollo A Medida"
               text={
                 <Fragment>
@@ -64,7 +70,7 @@ const Header = () => {
               }
             />
             <Product
-              image_file_name="/design_thinking.png"
+              image={design_thinking}
               title="Design Thinking"
               text={
                 <Fragment>
@@ -78,7 +84,7 @@ const Header = () => {
               icon_size="large"
             />
             <Product
-              image_file_name="/finance_engineering.png"
+              image={finance_engineering}
               title="Optimización De Negocios"
               text={
                 <Fragment>
@@ -91,7 +97,7 @@ const Header = () => {
               icon_size="large"
             />
             <Product
-              image_file_name="/information_techs.png"
+              image={information_techs}
               title="Sistemas De Información"
               text={
                 <Fragment>

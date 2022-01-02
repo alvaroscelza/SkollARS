@@ -1,9 +1,11 @@
+import named_logo from "../images/named_logo.png";
+
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img className="logo header-logo-dark" alt="SkollARS" src="/named_logo.png" />
+          <img className="logo header-logo-dark" alt="SkollARS" src={named_logo} />
         </a>
         <div id="main-nav">
           <ul className="navbar-nav">
