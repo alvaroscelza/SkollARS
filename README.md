@@ -1,5 +1,10 @@
 # SkollARS
 
+Notes:
+
+-   Using https://dashboard.emailjs.com/admin as Email as a Service.
+-   Using gh-pages npm package to deploy on Github pages.
+
 ## Installation and running
 
 -   npm install
@@ -8,7 +13,6 @@
     -   Production: "https://alvaroscelza.github.io/SkollARS"
 -   npm start
 
-Notes:
+## Deploy to Production
 
--   Using https://dashboard.emailjs.com/admin as Email as a Service.
--   Using gh-pages npm package to deploy on Github pages.
+-   npm run deploy
