@@ -3,12 +3,12 @@ import emailjs from "emailjs-com";
 import ContactFormLabeledInput from "./ContactFormLabeledInput";
 
 const ContactForm = () => {
-    const [submitResult, setSubmitResult] = useState("");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [topic, setTopic] = useState("");
     const [message, setMessage] = useState("");
-    const [showTooltip, setShowTooltip] = useState(false);
+    const [submitResult, setSubmitResult] = useState("hello world");
+    const [showTooltip, setShowTooltip] = useState(true);
     const form = useRef();
 
     const processForm = (e) => {
@@ -73,7 +73,12 @@ const ContactForm = () => {
 };
 
 const ToolTip = ({ message, hideFunction }) => {
-    return <span className="tooltiptext">{message}</span>;
+    return (
+        <div class="tooltip-container">
+            &nbsp;
+            <span class="tooltiptext">{message}</span>
+        </div>
+    );
 };
 
 export default ContactForm;
