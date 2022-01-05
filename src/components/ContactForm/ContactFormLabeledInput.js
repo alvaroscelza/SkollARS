@@ -14,9 +14,9 @@ const ContactFormLabeledInput = ({ value, label_text, field_name, input_type }) 
 
 const build_input_html = (input_type, value, field_name) => {
     return input_type === "textarea" ? (
-        <textarea className="form-control" name={field_name} value={value} required />
+        <textarea className="form-control" name={field_name} defaultValue={value} required />
     ) : (
-        <input type={input_type} className="form-control" name={field_name} value={value} required />
+        <input type={input_type} className="form-control" name={field_name} defaultValue={value} required />
     );
 };
 
