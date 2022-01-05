@@ -1,13 +1,21 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import ContactFormLabeledInput from "./ContactFormLabeledInput";
 
 const ContactForm = () => {
+    const [submitResult, setSubmitResult] = useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [topic, setTopic] = useState("");
+    const [message, setMessage] = useState("");
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const processForm = (e) => {
         e.preventDefault();
+        sendEmail();
+    };
 
+    const sendEmail = () => {
         emailjs
             .sendForm(
                 process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -17,10 +25,16 @@ const ContactForm = () => {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
+                    setSubmitResult("Email enviado exitosamente. Gracias!");
+                    setName("");
+                    setEmail("");
+                    setTopic("");
+                    setMessage("");
                 },
                 (error) => {
-                    console.log(error.text);
+                    setSubmitResult(
+                        "Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a <a href='mailto: skollars.software.development@gmail.com'>skollars.software.development@gmail.com</a> y notificarnos del error?"
+                    );
                 }
             );
     };
@@ -32,18 +46,22 @@ const ContactForm = () => {
                     <div className="col-12">
                         <h2 className="h2 text-dark">Conectemos.</h2>
                         <p>Por favor llena el siguiente formulario, y nos pondremos en contacto.</p>
+                        <p>
+                            O escríbenos a <a href="mailto: skollars.software.development@gmail.com">skollars.software.development@gmail.com</a>.
+                        </p>
                         <p>&nbsp;</p>
                     </div>
                 </div>
                 <div className="row text-center justify-content-center">
-                    <form ref={form} id="contact-form" className="hs-form" onSubmit={sendEmail}>
-                        <ContactFormLabeledInput label_text="Name" field_name="name" input_type="text" />
-                        <ContactFormLabeledInput label_text="Email" field_name="email" input_type="text" />
-                        <ContactFormLabeledInput label_text="Asunto" field_name="topic" input_type="text" />
-                        <ContactFormLabeledInput label_text="Mensaje" field_name="message" input_type="textarea" />
+                    <form ref={form} id="contact-form" className="hs-form" onSubmit={processForm}>
+                        <ContactFormLabeledInput value={name} label_text="Name" field_name="name" input_type="text" />
+                        <ContactFormLabeledInput value={email} label_text="Email" field_name="email" input_type="text" />
+                        <ContactFormLabeledInput value={topic} label_text="Asunto" field_name="topic" input_type="text" />
+                        <ContactFormLabeledInput value={message} label_text="Mensaje" field_name="message" input_type="textarea" />
                         <button type="submit" className="btn btn-primary">
                             Enviar Mensaje
                         </button>
+                        <span class="tooltiptext">{submitResult}</span>
                     </form>
                 </div>
             </div>
