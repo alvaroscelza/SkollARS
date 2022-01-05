@@ -8,6 +8,7 @@ const ContactForm = () => {
     const [email, setEmail] = useState("");
     const [topic, setTopic] = useState("");
     const [message, setMessage] = useState("");
+    const [showTooltip, setShowTooltip] = useState(false);
     const form = useRef();
 
     const processForm = (e) => {
@@ -25,16 +26,18 @@ const ContactForm = () => {
             )
             .then(
                 (result) => {
-                    setSubmitResult("Email enviado exitosamente. Gracias!");
                     setName("");
                     setEmail("");
                     setTopic("");
                     setMessage("");
+                    setSubmitResult("Email enviado exitosamente. Gracias!");
+                    setShowTooltip(true);
                 },
                 (error) => {
                     setSubmitResult(
                         "Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a <a href='mailto: skollars.software.development@gmail.com'>skollars.software.development@gmail.com</a> y notificarnos del error?"
                     );
+                    setShowTooltip(true);
                 }
             );
     };
@@ -61,12 +64,16 @@ const ContactForm = () => {
                         <button type="submit" className="btn btn-primary">
                             Enviar Mensaje
                         </button>
-                        <span class="tooltiptext">{submitResult}</span>
+                        {showTooltip ? <ToolTip message={submitResult} hideFunction={setShowTooltip} /> : null}
                     </form>
                 </div>
             </div>
         </section>
     );
+};
+
+const ToolTip = ({ message, hideFunction }) => {
+    return <span className="tooltiptext">{message}</span>;
 };
 
 export default ContactForm;
