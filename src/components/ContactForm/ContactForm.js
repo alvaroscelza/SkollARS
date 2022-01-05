@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
 import ContactFormLabeledInput from "./ContactFormLabeledInput";
 
@@ -7,8 +7,8 @@ const ContactForm = () => {
     const [email, setEmail] = useState("");
     const [topic, setTopic] = useState("");
     const [message, setMessage] = useState("");
-    const [submitResult, setSubmitResult] = useState("hello world");
-    const [showTooltip, setShowTooltip] = useState(true);
+    const [submitResult, setSubmitResult] = useState("");
+    const [showTooltip, setShowTooltip] = useState(false);
     const form = useRef();
 
     const processForm = (e) => {
@@ -73,6 +73,10 @@ const ContactForm = () => {
 };
 
 const ToolTip = ({ message, hideFunction }) => {
+    useEffect(() => {
+        setTimeout(hideFunction, 3000);
+    });
+
     return (
         <div class="tooltip-container">
             &nbsp;
