@@ -1,5 +1,5 @@
 import { Fragment } from "react/cjs/react.production.min";
-import ContactForm from "./ContactForm";
+import ContactForm from "./ContactForm/ContactForm";
 import Product from "./Product";
 import one_gear from "../images/one_gear.png";
 import two_gears from "../images/two_gears.png";
