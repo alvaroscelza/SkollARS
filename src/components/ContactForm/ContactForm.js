@@ -60,10 +60,12 @@ const ContactForm = () => {
                         <ContactFormLabeledInput value={email} label_text="Email" field_name="email" input_type="text" />
                         <ContactFormLabeledInput value={topic} label_text="Asunto" field_name="topic" input_type="text" />
                         <ContactFormLabeledInput value={message} label_text="Mensaje" field_name="message" input_type="textarea" />
-                        <button type="submit" className="btn btn-primary">
-                            Enviar Mensaje
-                        </button>
-                        {showTooltip ? <ToolTip message={submitResult} hideFunction={setShowTooltip} /> : null}
+                        <div>
+                            <button type="submit" className="btn btn-primary">
+                                Enviar Mensaje
+                            </button>
+                            {showTooltip ? <ToolTip message={submitResult} hideFunction={setShowTooltip} /> : null}
+                        </div>
                     </form>
                 </div>
             </div>
@@ -79,10 +81,7 @@ const ToolTip = ({ message, hideFunction }) => {
     return (
         <div className="tooltip-container">
             &nbsp;
-            <span>
-                Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a <br />
-                <a href="mailto: skollars.software.development@gmail.com">skollars.software.development@gmail.com</a> y notificarnos del error?
-            </span>
+            <span>Email enviado exitosamente. Gracias!</span>
         </div>
     );
 };

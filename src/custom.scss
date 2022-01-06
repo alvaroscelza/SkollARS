@@ -115,7 +115,8 @@ textarea {
 
 .tooltip-container {
     position: absolute;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     background-color: black;
     color: #fff;
     border-radius: 6px;
