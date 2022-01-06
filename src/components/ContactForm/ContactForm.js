@@ -8,7 +8,7 @@ const ContactForm = () => {
     const [topic, setTopic] = useState("");
     const [message, setMessage] = useState("");
     const [submitResult, setSubmitResult] = useState("");
-    const [showTooltip, setShowTooltip] = useState(true);
+    const [showTooltip, setShowTooltip] = useState(false);
     const form = useRef();
 
     const processForm = (e) => {
@@ -74,14 +74,14 @@ const ContactForm = () => {
 };
 
 const ToolTip = ({ message, hideFunction }) => {
-    // useEffect(() => {
-    //     setTimeout(hideFunction, 3000);
-    // });
+    useEffect(() => {
+        setTimeout(hideFunction, 3000);
+    });
 
     return (
         <div className="tooltip-container">
             &nbsp;
-            <span>Email enviado exitosamente. Gracias!</span>
+            <span>{message}</span>
         </div>
     );
 };

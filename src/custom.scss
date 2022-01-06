@@ -43,12 +43,27 @@ textarea {
     border-color: #8a0303;
     border-radius: 2rem;
     padding: 16px 20px;
-}
 
-.btn-primary:hover {
-    color: #fff;
-    background-color: #8a0303;
-    border-color: #8a0303;
+    &:hover {
+        color: #fff;
+        background-color: #8a0303;
+        border-color: #8a0303;
+    }
+
+    &:active {
+        color: #8a0303;
+        background-color: transparent;
+        border-color: #8a0303;
+        border-radius: 2rem;
+        padding: 16px 20px;
+    }
+
+    &:focus {
+        color: #fff;
+        background-color: #8a0303;
+        border-color: #8a0303;
+        box-shadow: 0 0 0 0.25rem rgb(233 93 145 / 16%);
+    }
 }
 
 .container {
