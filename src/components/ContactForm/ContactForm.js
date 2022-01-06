@@ -8,7 +8,7 @@ const ContactForm = () => {
     const [topic, setTopic] = useState("");
     const [message, setMessage] = useState("");
     const [submitResult, setSubmitResult] = useState("");
-    const [showTooltip, setShowTooltip] = useState(false);
+    const [showTooltip, setShowTooltip] = useState(true);
     const form = useRef();
 
     const processForm = (e) => {
@@ -73,14 +73,17 @@ const ContactForm = () => {
 };
 
 const ToolTip = ({ message, hideFunction }) => {
-    useEffect(() => {
-        setTimeout(hideFunction, 3000);
-    });
+    // useEffect(() => {
+    //     setTimeout(hideFunction, 3000);
+    // });
 
     return (
         <div class="tooltip-container">
             &nbsp;
-            <span class="tooltiptext">{message}</span>
+            <span class="tooltiptext">
+                Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a <br />
+                <a href="mailto: skollars.software.development@gmail.com">skollars.software.development@gmail.com</a> y notificarnos del error?
+            </span>
         </div>
     );
 };
