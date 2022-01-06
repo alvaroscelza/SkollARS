@@ -52,7 +52,6 @@ const ContactForm = () => {
                         <p>
                             O escríbenos a <a href="mailto: skollars.software.development@gmail.com">skollars.software.development@gmail.com</a>.
                         </p>
-                        <p>&nbsp;</p>
                     </div>
                 </div>
                 <div className="row text-center justify-content-center">
@@ -78,9 +77,9 @@ const ToolTip = ({ message, hideFunction }) => {
     // });
 
     return (
-        <div class="tooltip-container">
+        <div className="tooltip-container">
             &nbsp;
-            <span class="tooltiptext">
+            <span>
                 Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a <br />
                 <a href="mailto: skollars.software.development@gmail.com">skollars.software.development@gmail.com</a> y notificarnos del error?
             </span>

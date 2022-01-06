@@ -114,25 +114,23 @@ textarea {
 }
 
 .tooltip-container {
-    position: relative;
+    position: absolute;
     display: inline-block;
-}
-
-.tooltip-container .tooltiptext {
-    width: 120px;
     background-color: black;
     color: #fff;
-    text-align: center;
     border-radius: 6px;
     padding: 5px;
-    position: inherit;
-    margin-left: 5px;
+    margin-left: 10px;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
 }
 
-.tooltip-container .tooltiptext::after {
+.tooltip-container::after {
     content: "";
     position: absolute;
-    top: 50%;
     right: 100%;
     margin-top: -5px;
     border-width: 5px;
