@@ -34,10 +34,9 @@ const ContactForm = () => {
                     setShowTooltip(true);
                 },
                 (error) => {
-                    let errorMessage = `Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a 
-                        <a href='mailto: skollars.software.development@gmail.com'>skollars.software.development@gmail.com</a> 
-                        y notificarnos del error?`;
-                    setSubmitResult(errorMessage);
+                    setSubmitResult(
+                        "Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a <a href='mailto: skollars.software.development@gmail.com'>skollars.software.development@gmail.com</a> y notificarnos del error?"
+                    );
                     setShowTooltip(true);
                 }
             );
