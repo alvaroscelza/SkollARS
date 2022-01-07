@@ -9,6 +9,10 @@ form {
 
 h1 {
     font-size: 7rem;
+
+    @media (max-width: 750px) {
+        font-size: 3rem;
+    }
 }
 
 input {
