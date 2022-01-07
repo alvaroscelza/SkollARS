@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SkollARS/static/css/main.8c7a2238.chunk.css",
+    "main.css": "/SkollARS/static/css/main.2dcc5f42.chunk.css",
     "main.js": "/SkollARS/static/js/main.021bd060.chunk.js",
     "main.js.map": "/SkollARS/static/js/main.021bd060.chunk.js.map",
     "runtime-main.js": "/SkollARS/static/js/runtime-main.8674bff7.js",
@@ -8,7 +8,7 @@
     "static/js/2.212ef714.chunk.js": "/SkollARS/static/js/2.212ef714.chunk.js",
     "static/js/2.212ef714.chunk.js.map": "/SkollARS/static/js/2.212ef714.chunk.js.map",
     "index.html": "/SkollARS/index.html",
-    "static/css/main.8c7a2238.chunk.css.map": "/SkollARS/static/css/main.8c7a2238.chunk.css.map",
+    "static/css/main.2dcc5f42.chunk.css.map": "/SkollARS/static/css/main.2dcc5f42.chunk.css.map",
     "static/js/2.212ef714.chunk.js.LICENSE.txt": "/SkollARS/static/js/2.212ef714.chunk.js.LICENSE.txt",
     "static/media/design_thinking.135cceff.png": "/SkollARS/static/media/design_thinking.135cceff.png",
     "static/media/finance_engineering.96371755.png": "/SkollARS/static/media/finance_engineering.96371755.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.8674bff7.js",
     "static/js/2.212ef714.chunk.js",
-    "static/css/main.8c7a2238.chunk.css",
+    "static/css/main.2dcc5f42.chunk.css",
     "static/js/main.021bd060.chunk.js"
   ]
 }
