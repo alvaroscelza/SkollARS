@@ -8,11 +8,11 @@
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 8px;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: outline-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     height: 3em;
 
     &:focus {
-        border-color: #8a0303;
+        outline-color: #8a0303;
         box-shadow: 0 0 0 0.25rem rgb(233 93 145 / 16%);
     }
 }
