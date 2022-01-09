@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
 import ContactFormLabeledInput from "./ContactFormLabeledInput";
 import indexStyles from "../../index.module.scss";
+import contactFormStyles from "./ContactForm.module.scss";
 
 const ContactForm = () => {
     const [name, setName] = useState("");
@@ -78,7 +79,7 @@ const ToolTip = ({ message, hideFunction }) => {
     });
 
     return (
-        <div className={`${indexStyles["tooltip-container"]}`}>
+        <div className={`${contactFormStyles["tooltip-container"]}`}>
             &nbsp;
             <span>{message}</span>
         </div>
