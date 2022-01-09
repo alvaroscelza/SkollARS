@@ -10,7 +10,7 @@ import design_thinking from "../images/design_thinking.png";
 import finance_engineering from "../images/finance_engineering.png";
 import information_techs from "../images/information_techs.png";
 
-const Header = () => {
+const Home = () => {
     return (
         <Fragment>
             <section className={homeStyles.section}>
@@ -122,4 +122,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Home;
