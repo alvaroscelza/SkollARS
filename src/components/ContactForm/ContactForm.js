@@ -75,7 +75,7 @@ const ContactForm = () => {
 
 const ToolTip = ({ message, hideFunction }) => {
     useEffect(() => {
-        setTimeout(hideFunction, 3000);
+        setTimeout(hideFunction, 5000);
     });
 
     return (
