@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SkollARS/static/css/main.0593deef.chunk.css",
-    "main.js": "/SkollARS/static/js/main.a9d16ecc.chunk.js",
-    "main.js.map": "/SkollARS/static/js/main.a9d16ecc.chunk.js.map",
+    "main.css": "/SkollARS/static/css/main.ab491fc0.chunk.css",
+    "main.js": "/SkollARS/static/js/main.3a385618.chunk.js",
+    "main.js.map": "/SkollARS/static/js/main.3a385618.chunk.js.map",
     "runtime-main.js": "/SkollARS/static/js/runtime-main.8674bff7.js",
     "runtime-main.js.map": "/SkollARS/static/js/runtime-main.8674bff7.js.map",
-    "static/js/2.c00ba76b.chunk.js": "/SkollARS/static/js/2.c00ba76b.chunk.js",
-    "static/js/2.c00ba76b.chunk.js.map": "/SkollARS/static/js/2.c00ba76b.chunk.js.map",
+    "static/js/2.03b371a0.chunk.js": "/SkollARS/static/js/2.03b371a0.chunk.js",
+    "static/js/2.03b371a0.chunk.js.map": "/SkollARS/static/js/2.03b371a0.chunk.js.map",
     "index.html": "/SkollARS/index.html",
-    "static/css/main.0593deef.chunk.css.map": "/SkollARS/static/css/main.0593deef.chunk.css.map",
-    "static/js/2.c00ba76b.chunk.js.LICENSE.txt": "/SkollARS/static/js/2.c00ba76b.chunk.js.LICENSE.txt",
+    "static/css/main.ab491fc0.chunk.css.map": "/SkollARS/static/css/main.ab491fc0.chunk.css.map",
+    "static/js/2.03b371a0.chunk.js.LICENSE.txt": "/SkollARS/static/js/2.03b371a0.chunk.js.LICENSE.txt",
     "static/media/design_thinking.135cceff.png": "/SkollARS/static/media/design_thinking.135cceff.png",
     "static/media/finance_engineering.96371755.png": "/SkollARS/static/media/finance_engineering.96371755.png",
     "static/media/information_techs.676a61b3.png": "/SkollARS/static/media/information_techs.676a61b3.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8674bff7.js",
-    "static/js/2.c00ba76b.chunk.js",
-    "static/css/main.0593deef.chunk.css",
-    "static/js/main.a9d16ecc.chunk.js"
+    "static/js/2.03b371a0.chunk.js",
+    "static/css/main.ab491fc0.chunk.css",
+    "static/js/main.3a385618.chunk.js"
   ]
 }
