@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./custom.scss";
+import "./index.scss";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
