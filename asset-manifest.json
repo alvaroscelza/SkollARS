@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SkollARS/static/css/main.0593deef.chunk.css",
-    "main.js": "/SkollARS/static/js/main.7a06293d.chunk.js",
-    "main.js.map": "/SkollARS/static/js/main.7a06293d.chunk.js.map",
+    "main.js": "/SkollARS/static/js/main.a9d16ecc.chunk.js",
+    "main.js.map": "/SkollARS/static/js/main.a9d16ecc.chunk.js.map",
     "runtime-main.js": "/SkollARS/static/js/runtime-main.8674bff7.js",
     "runtime-main.js.map": "/SkollARS/static/js/runtime-main.8674bff7.js.map",
     "static/js/2.c00ba76b.chunk.js": "/SkollARS/static/js/2.c00ba76b.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.8674bff7.js",
     "static/js/2.c00ba76b.chunk.js",
     "static/css/main.0593deef.chunk.css",
-    "static/js/main.7a06293d.chunk.js"
+    "static/js/main.a9d16ecc.chunk.js"
   ]
 }
