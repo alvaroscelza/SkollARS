@@ -1,0 +1,20 @@
+@import "../index.module.scss";
+
+.h1 {
+    font-size: 7rem;
+
+    @media (max-width: 750px) {
+        font-size: 3rem;
+    }
+}
+
+.section {
+    padding: 4.5rem 0;
+    padding-top: 0;
+}
+
+.button {
+    @extend .button;
+
+    font-size: 1.25rem;
+}
