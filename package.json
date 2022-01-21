@@ -2,7 +2,7 @@
     "name": "skollars",
     "version": "1.0.1",
     "private": true,
-    "homepage": "https://alvaroscelza.github.io/SkollARS",
+    "homepage": "http://skollars.com/",
     "dependencies": {
         "emailjs-com": "^3.2.0",
         "gh-pages": "^3.2.3",
