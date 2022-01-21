@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/SkollARS/static/css/main.37256c69.chunk.css",
-    "main.js": "/SkollARS/static/js/main.439de248.chunk.js",
-    "main.js.map": "/SkollARS/static/js/main.439de248.chunk.js.map",
-    "runtime-main.js": "/SkollARS/static/js/runtime-main.8674bff7.js",
-    "runtime-main.js.map": "/SkollARS/static/js/runtime-main.8674bff7.js.map",
-    "static/js/2.03b371a0.chunk.js": "/SkollARS/static/js/2.03b371a0.chunk.js",
-    "static/js/2.03b371a0.chunk.js.map": "/SkollARS/static/js/2.03b371a0.chunk.js.map",
-    "index.html": "/SkollARS/index.html",
-    "static/css/main.37256c69.chunk.css.map": "/SkollARS/static/css/main.37256c69.chunk.css.map",
-    "static/js/2.03b371a0.chunk.js.LICENSE.txt": "/SkollARS/static/js/2.03b371a0.chunk.js.LICENSE.txt",
-    "static/media/design_thinking.135cceff.png": "/SkollARS/static/media/design_thinking.135cceff.png",
-    "static/media/finance_engineering.96371755.png": "/SkollARS/static/media/finance_engineering.96371755.png",
-    "static/media/information_techs.676a61b3.png": "/SkollARS/static/media/information_techs.676a61b3.png",
-    "static/media/named_logo.a95c4360.png": "/SkollARS/static/media/named_logo.a95c4360.png",
-    "static/media/one_gear.873ca75f.png": "/SkollARS/static/media/one_gear.873ca75f.png",
-    "static/media/three_gears.b7f7a020.png": "/SkollARS/static/media/three_gears.b7f7a020.png",
-    "static/media/two_gears.f7271a02.png": "/SkollARS/static/media/two_gears.f7271a02.png"
+    "main.css": "/static/css/main.37256c69.chunk.css",
+    "main.js": "/static/js/main.bdab4b30.chunk.js",
+    "main.js.map": "/static/js/main.bdab4b30.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7f763902.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7f763902.js.map",
+    "static/js/2.03b371a0.chunk.js": "/static/js/2.03b371a0.chunk.js",
+    "static/js/2.03b371a0.chunk.js.map": "/static/js/2.03b371a0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.37256c69.chunk.css.map": "/static/css/main.37256c69.chunk.css.map",
+    "static/js/2.03b371a0.chunk.js.LICENSE.txt": "/static/js/2.03b371a0.chunk.js.LICENSE.txt",
+    "static/media/design_thinking.135cceff.png": "/static/media/design_thinking.135cceff.png",
+    "static/media/finance_engineering.96371755.png": "/static/media/finance_engineering.96371755.png",
+    "static/media/information_techs.676a61b3.png": "/static/media/information_techs.676a61b3.png",
+    "static/media/named_logo.a95c4360.png": "/static/media/named_logo.a95c4360.png",
+    "static/media/one_gear.873ca75f.png": "/static/media/one_gear.873ca75f.png",
+    "static/media/three_gears.b7f7a020.png": "/static/media/three_gears.b7f7a020.png",
+    "static/media/two_gears.f7271a02.png": "/static/media/two_gears.f7271a02.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8674bff7.js",
+    "static/js/runtime-main.7f763902.js",
     "static/js/2.03b371a0.chunk.js",
     "static/css/main.37256c69.chunk.css",
-    "static/js/main.439de248.chunk.js"
+    "static/js/main.bdab4b30.chunk.js"
   ]
 }
