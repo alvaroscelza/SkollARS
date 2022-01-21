@@ -10,7 +10,7 @@ Notes:
 -   npm install
 -   Change "homepage" property accordingly:
     -   Development: "."
-    -   Production: "https://alvaroscelza.github.io/SkollARS"
+    -   Production: "http://skollars.com"
 -   npm start
 
 ## Deploy to Production
