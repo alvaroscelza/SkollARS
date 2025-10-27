@@ -1,4 +1,4 @@
-import { Fragment } from "react/cjs/react.production.min";
+import { Fragment } from "react";
 import homeStyles from "./Home.module.scss";
 import indexStyles from "../index.module.scss";
 import ContactForm from "./ContactForm/ContactForm";

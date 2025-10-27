@@ -1,49 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
-import emailjs from "emailjs-com";
-import ContactFormLabeledInput from "./ContactFormLabeledInput";
+import React, { useEffect } from "react";
 import indexStyles from "../../index.module.scss";
 import contactFormStyles from "./ContactForm.module.scss";
 
 const ContactForm = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [topic, setTopic] = useState("");
-    const [message, setMessage] = useState("");
-    const [submitResult, setSubmitResult] = useState("");
-    const [showTooltip, setShowTooltip] = useState(false);
-    const form = useRef();
-
-    const processForm = (e) => {
-        e.preventDefault();
-        sendEmail();
-    };
-
-    const sendEmail = () => {
-        emailjs
-            .sendForm(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-                form.current,
-                process.env.REACT_APP_EMAILJS_USER_ID
-            )
-            .then(
-                (result) => {
-                    setName("");
-                    setEmail("");
-                    setTopic("");
-                    setMessage("");
-                    setSubmitResult("Email enviado exitosamente. Gracias!");
-                    setShowTooltip(true);
-                },
-                (error) => {
-                    setSubmitResult(
-                        "Ha ocurrido un error con el envío de email. Por favor, ¿podrías escribirnos a <a href='mailto: skollars.software.development@gmail.com'>skollars.software.development@gmail.com</a> y notificarnos del error?"
-                    );
-                    setShowTooltip(true);
-                }
-            );
-    };
-
     return (
         <div className={indexStyles.container}>
             <div className="row text-center justify-content-center">
