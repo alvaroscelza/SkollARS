@@ -21,3 +21,5 @@ Notes:
 ## Deploy to Production
 
 -   npm run deploy
+
+**Note:** For production deployment on GitHub Pages, the EmailJS credentials are already configured in `src/config/emailConfig.js`. No additional environment variables setup is needed.
