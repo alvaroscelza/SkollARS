@@ -28,9 +28,6 @@ const ContactForm = () => {
         e.preventDefault();
         setIsLoading(true);
         
-        console.log('EmailJS Config:', emailConfig);
-        console.log('Form Data:', formData);
-        
         try {
             const templateParams = {
                 from_name: formData.name,
@@ -39,8 +36,6 @@ const ContactForm = () => {
                 message: formData.message,
                 to_email: 'skollars.software.development@gmail.com'
             };
-
-            console.log('Sending email with params:', templateParams);
 
             await emailjs.send(
                 emailConfig.serviceId,
