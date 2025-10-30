@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import emailjs from 'emailjs-com';
-import indexStyles from "../../index.module.scss";
 import contactFormStyles from "./ContactForm.module.scss";
-import ContactFormLabeledInput from "./ContactFormLabeledInput";
 import { emailConfig } from "../../config/emailConfig";
 
 const ContactForm = () => {
@@ -56,55 +54,65 @@ const ContactForm = () => {
     };
 
     return (
-        <div className={indexStyles.container}>
-            <div className="row text-center justify-content-center">
-                <div className="col-12">
-                    <h2 className="h2 text-dark">Conectemos.</h2>
-                    <p className={indexStyles.p}>Por favor llena el siguiente formulario, y nos pondremos en contacto.</p>
-                    <p className={indexStyles.p}>
-                        O escríbenos a <a href="mailto: skollars.software.development@gmail.com">skollars.software.development@gmail.com</a>.
-                    </p>
+        <section id="contacto" className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Conectemos.</h2>
+            <p className="text-lg text-gray-600 mb-6">
+                Por favor, rellene el siguiente formulario, y nos pondremos en contacto.
+            </p>
+            <p className="text-sm text-gray-500 mb-8">
+                O escríbanos a <a href="mailto:skollars.software.development@gmail.com" className="text-skollars-accent hover:text-red-900 underline">skollars.software.development@gmail.com</a>
+            </p>
+            <form ref={form} className="space-y-6" onSubmit={processForm}>
+                <div>
+                    <label htmlFor="name" className="block text-left text-sm font-medium text-gray-700 mb-1">Name:*</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        required 
+                        value={formData.name}
+                        onChange={(e) => handleInputChange('name', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
+                    />
                 </div>
-            </div>
-            <div className="row text-center justify-content-center">
-                <form ref={form} id="contact-form" className="hs-form" onSubmit={processForm}>
-                    <ContactFormLabeledInput 
-                        value={formData.name} 
-                        label_text="Name" 
-                        field_name="name" 
-                        input_type="text" 
-                        onChange={(value) => handleInputChange('name', value)}
+                <div>
+                    <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700 mb-1">Email:*</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        required 
+                        value={formData.email}
+                        onChange={(e) => handleInputChange('email', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                     />
-                    <ContactFormLabeledInput 
-                        value={formData.email} 
-                        label_text="Email" 
-                        field_name="email" 
-                        input_type="email" 
-                        onChange={(value) => handleInputChange('email', value)}
+                </div>
+                <div>
+                    <label htmlFor="subject" className="block text-left text-sm font-medium text-gray-700 mb-1">Asunto:*</label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        required 
+                        value={formData.topic}
+                        onChange={(e) => handleInputChange('topic', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                     />
-                    <ContactFormLabeledInput 
-                        value={formData.topic} 
-                        label_text="Asunto" 
-                        field_name="topic" 
-                        input_type="text" 
-                        onChange={(value) => handleInputChange('topic', value)}
-                    />
-                    <ContactFormLabeledInput 
-                        value={formData.message} 
-                        label_text="Mensaje" 
-                        field_name="message" 
-                        input_type="textarea" 
-                        onChange={(value) => handleInputChange('message', value)}
-                    />
-                    <div>
-                        <button type="submit" className={indexStyles.button} disabled={isLoading}>
-                            {isLoading ? "Enviando..." : "Enviar Mensaje"}
-                        </button>
-                        {showTooltip ? <ToolTip message={submitResult} hideFunction={setShowTooltip} /> : null}
-                    </div>
-                </form>
-            </div>
-        </div>
+                </div>
+                <div>
+                    <label htmlFor="message" className="block text-left text-sm font-medium text-gray-700 mb-1">Mensaje:*</label>
+                    <textarea 
+                        id="message" 
+                        rows="4" 
+                        required 
+                        value={formData.message}
+                        onChange={(e) => handleInputChange('message', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
+                    ></textarea>
+                </div>
+                <button type="submit" className="btn-primary-gradient font-semibold shadow-md mt-4" disabled={isLoading}>
+                    {isLoading ? "Enviando..." : "Enviar Mensaje"}
+                </button>
+                {showTooltip ? <ToolTip message={submitResult} hideFunction={setShowTooltip} /> : null}
+            </form>
+        </section>
     );
 };
 

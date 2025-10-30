@@ -1,7 +1,9 @@
-import footerStyles from "./Footer.module.scss";
-
 const Footer = () => {
-    return <div className={footerStyles.footer}>Copyright © {new Date().getFullYear()} SkollARS Software Development</div>;
+    return (
+        <footer className="bg-gray-200 py-4 text-center text-sm text-gray-600">
+            Copyright © {new Date().getFullYear()} SkollARS. Todos los derechos reservados.
+        </footer>
+    );
 };
 
 export default Footer;
