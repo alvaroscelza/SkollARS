@@ -1,14 +1,19 @@
+import { Link, useLocation } from "react-router-dom";
+
 const Header = () => {
+    const location = useLocation();
+    const isHome = location.pathname === "/";
+
     return (
         <header className="bg-white shadow-md">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-                <div className="flex items-center space-x-2">
-                    <img src="/logo.png" alt="Logo SkollARS" className="w-8 h-8 rounded-full" />
+                <Link to="/" className="flex items-center space-x-2">
+                    <img src={`${process.env.PUBLIC_URL || ''}/logo.png`} alt="Logo SkollARS" className="w-8 h-8 rounded-full" />
                     <span className="text-xl font-bold text-gray-800">SkollARS</span>
-                </div>
+                </Link>
                 <div className="hidden md:flex space-x-8 items-center text-gray-600 font-medium">
-                    <a href="#home" className="hover:text-skollars-accent transition duration-150">Home</a>
-                    <a href="#servicios" className="hover:text-skollars-accent transition duration-150">Servicios</a>
+                    <Link to="/#home" className="hover:text-skollars-accent transition duration-150">Home</Link>
+                    <Link to="/#servicios" className="hover:text-skollars-accent transition duration-150">Servicios</Link>
                     <div className="relative dropdown">
                         <button className="hover:text-skollars-accent transition duration-150 p-2 focus:outline-none">
                             Productos
@@ -17,12 +22,12 @@ const Header = () => {
                             </svg>
                         </button>
                         <div className="dropdown-menu">
-                            <a href="#productos" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Software Finanzas Personales</a>
-                            <a href="#productos" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Adopción de Mascotas y Apoyo a Refugios</a>
-                            <a href="#productos" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Gestión Empresarial</a>
+                            <Link to="/productos/finanzas-personales" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Software Finanzas Personales</Link>
+                            <Link to="/productos/adopcion-mascotas" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Adopción de Mascotas y Apoyo a Refugios</Link>
+                            <Link to="/productos/gestion-empresarial" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Gestión Empresarial</Link>
                         </div>
                     </div>
-                    <a href="#contacto" className="btn-contacto">Contacto</a>
+                    <Link to={isHome ? "#contacto" : "/#contacto"} className="btn-contacto">Contacto</Link>
                 </div>
                 <button className="md:hidden text-gray-600 hover:text-skollars-accent">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Portfolio = () => {
     return (
-        <section id="productos" className="py-16 bg-gray-50 border-t border-b border-gray-200">
+        <section id="productos" className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-4xl font-bold text-gray-800 mb-4">Nuestro Portafolio de Soluciones</h2>
                 <p className="text-xl text-gray-500 mb-12 max-w-3xl mx-auto">
@@ -16,7 +18,7 @@ const Portfolio = () => {
                             Centralice ventas, inventario, facturación y clientes en un solo lugar. Ofrecemos implementación, hosting y mantenimiento para su crecimiento.
                         </p>
                         <p className="text-xs text-gray-400 mt-2">Impulsado por Odoo</p>
-                        <a href="#servicios" className="text-skollars-accent hover:text-red-900 font-medium mt-3 inline-block">Explorar Servicios →</a>
+                        <Link to="/productos/gestion-empresarial" className="text-skollars-accent hover:text-red-900 font-medium mt-3 inline-block">Explorar Servicios →</Link>
                     </div>
                     <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.01]">
                         <svg className="text-skollars-accent icon-lg mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +28,7 @@ const Portfolio = () => {
                         <p className="text-gray-500 mb-4">
                             Una aplicación web para ayudarte a gestionar ingresos, gastos e inversiones de forma simple y efectiva.
                         </p>
-                        <a href="#contacto" className="text-skollars-accent hover:text-red-900 font-medium">Ir a la Aplicación →</a>
+                        <Link to="/productos/finanzas-personales" className="text-skollars-accent hover:text-red-900 font-medium">Ir a la Aplicación →</Link>
                     </div>
                     <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.01]">
                         <svg className="text-skollars-accent icon-lg mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +38,7 @@ const Portfolio = () => {
                         <p className="text-gray-500 mb-4">
                             Una plataforma que conecta personas que encuentran animales callejeros con adoptantes comprometidos, fomentando el cambio social.
                         </p>
-                        <a href="#contacto" className="text-skollars-accent hover:text-red-900 font-medium">Conocer el Proyecto →</a>
+                        <Link to="/productos/adopcion-mascotas" className="text-skollars-accent hover:text-red-900 font-medium">Conocer el Proyecto →</Link>
                     </div>
                 </div>
             </div>
