@@ -130,12 +130,14 @@ const GestionEmpresarial = () => {
                     </div>
                 </div>
             </section>
-            <section id="contacto" className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <section id="contacto" className="py-20 bg-white border-t border-gray-200">
+                <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">¿Listo para transformar la gestión de su negocio?</h2>
                 <p className="text-lg text-gray-600 mb-8">
                     Complete el formulario y un especialista de SkollARS lo contactará para un diagnóstico gratuito, sin compromiso.
                 </p>
                 <ContactFormSimple buttonText="Pedir Asesoramiento" />
+                </div>
             </section>
             <footer className="bg-gray-200 pt-8 pb-6 text-sm text-gray-600">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
