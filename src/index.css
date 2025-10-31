@@ -104,6 +104,19 @@ body {
     height: 48px;
 }
 
+.icon-xl {
+    width: 64px;
+    height: 64px;
+}
+
+.border-skollars-accent {
+    border-color: #a90000;
+}
+
+.bg-skollars-accent-light {
+    background-color: #fcede8;
+}
+
 @keyframes shine {
     0% { left: -100%; }
     100% { left: 100%; }

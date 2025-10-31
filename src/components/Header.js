@@ -13,7 +13,6 @@ const Header = () => {
                 </Link>
                 <div className="hidden md:flex space-x-8 items-center text-gray-600 font-medium">
                     <Link to="/#home" className="hover:text-skollars-accent transition duration-150">Home</Link>
-                    <Link to="/#servicios" className="hover:text-skollars-accent transition duration-150">Servicios</Link>
                     <div className="relative dropdown">
                         <button className="hover:text-skollars-accent transition duration-150 p-2 focus:outline-none">
                             Productos
