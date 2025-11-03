@@ -122,6 +122,16 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
+.pet-icon {
+    color: #a90000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7e6e6;
+    border-radius: 50%;
+    padding: 8px;
+}
+
 @keyframes shine {
     0% { left: -100%; }
     100% { left: 100%; }
