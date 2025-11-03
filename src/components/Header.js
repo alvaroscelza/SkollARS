@@ -21,9 +21,9 @@ const Header = () => {
                             </svg>
                         </button>
                         <div className="dropdown-menu">
-                            <Link to="/productos/finanzas-personales" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Software Finanzas Personales</Link>
-                            <Link to="/productos/adopcion-mascotas" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Adopción de Mascotas y Apoyo a Refugios</Link>
-                            <Link to="/productos/gestion-empresarial" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Gestión Empresarial</Link>
+                            <Link to="/productos/gestion-empresarial" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Odoo ERP</Link>
+                            <Link to="/productos/finanzas-personales" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">FinApp</Link>
+                            <Link to="/productos/adopcion-mascotas" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Adopción de Mascotas</Link>
                         </div>
                     </div>
                     <Link to={isHome ? "#contacto" : "/#contacto"} className="btn-contacto">Contacto</Link>

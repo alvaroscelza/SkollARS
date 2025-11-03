@@ -72,7 +72,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 0.5rem;
     z-index: 10;
-    min-width: 200px;
+    min-width: 280px;
     top: calc(100% + 0.5rem);
     left: 50%;
     transform: translateX(-50%);
@@ -115,6 +115,11 @@ body {
 
 .bg-skollars-accent-light {
     background-color: #fcede8;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 @keyframes shine {
