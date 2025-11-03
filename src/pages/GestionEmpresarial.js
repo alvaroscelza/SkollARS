@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ContactFormSimple from "../components/ContactForm/ContactFormSimple";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 const GestionEmpresarial = () => {
     return (
@@ -19,8 +19,8 @@ const GestionEmpresarial = () => {
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src="https://placehold.co/600x400/1a1a1a/a90000/png?text=Gestion+Unificada" alt="Vista centralizada de gestión de inventario y ventas." className="rounded-lg shadow-2xl mb-3" />
-                        <p className="text-sm text-gray-500 text-center italic">Vista centralizada de gestión de inventario, ventas y clientes en tiempo real.</p>
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/odoo.png`} alt="Aplicaciones Odoo disponibles" className="rounded-lg shadow-2xl mb-3" />
+                        <p className="text-sm text-gray-500 text-center italic">Todas estas aplicaciones están disponibles para su negocio. Gestione inventario, ventas, facturación, clientes y más desde una plataforma integrada.</p>
                     </div>
                 </div>
             </main>
@@ -33,29 +33,29 @@ const GestionEmpresarial = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="p-6 bg-white rounded-xl shadow-lg">
                             <svg className="text-skollars-accent icon-lg mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                             </svg>
-                            <h3 className="text-xl font-semibold mb-2 text-gray-800">Inventario Desactualizado</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-800">Inventario en Tiempo Real</h3>
                             <p className="text-gray-500">
-                                Pierde ventas por no saber qué tiene en stock, o compra mercadería que no necesita.
+                                Sepa exactamente qué tiene en stock en cada momento. Evite perder ventas y optimice sus compras con información precisa.
                             </p>
                         </div>
                         <div className="p-6 bg-white rounded-xl shadow-lg">
                             <svg className="text-skollars-accent icon-lg mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            <h3 className="text-xl font-semibold mb-2 text-gray-800">Facturación Manual</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-800">Facturación Automatizada</h3>
                             <p className="text-gray-500">
-                                Dedica horas a crear facturas, enviarlas por email y perseguir pagos de clientes.
+                                Cree facturas electrónicas en segundos, envíelas automáticamente y gestione el seguimiento de pagos sin esfuerzo.
                             </p>
                         </div>
                         <div className="p-6 bg-white rounded-xl shadow-lg">
                             <svg className="text-skollars-accent icon-lg mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                             </svg>
-                            <h3 className="text-xl font-semibold mb-2 text-gray-800">Clientes Desorganizados</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-800">Gestión Inteligente de Clientes</h3>
                             <p className="text-gray-500">
-                                No tiene un historial de compras, no sabe quiénes son sus mejores clientes ni cómo fidelizarlos.
+                                Mantenga un historial completo de compras, identifique sus mejores clientes y desarrolle estrategias de fidelización efectivas.
                             </p>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ const GestionEmpresarial = () => {
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold text-gray-800 mb-4">Un Servicio "Llave en Mano"</h2>
                         <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-                            No solo le damos el software. Lo acompañamos en cada paso para asegurar su éxito.
+                            No solo le damos acceso al software. Lo acompañamos en cada paso para asegurar su éxito.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -130,15 +130,14 @@ const GestionEmpresarial = () => {
                     </div>
                 </div>
             </section>
-            <section id="contacto" className="py-20 bg-white border-t border-gray-200">
-                <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">¿Listo para transformar la gestión de su negocio?</h2>
-                <p className="text-lg text-gray-600 mb-8">
-                    Complete el formulario y un especialista de SkollARS lo contactará para un diagnóstico gratuito, sin compromiso.
-                </p>
-                <ContactFormSimple buttonText="Pedir Asesoramiento" />
-                </div>
-            </section>
+            <ContactForm
+                useSection={true}
+                sectionBg="white"
+                buttonText="Pedir Asesoramiento"
+                title="¿Listo para transformar la gestión de su negocio?"
+                description="Complete el formulario y le contactaremos para un diagnóstico gratuito, sin compromiso."
+                showEmailLink={false}
+            />
             <footer className="bg-gray-200 pt-8 pb-6 text-sm text-gray-600">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <p className="text-xs mb-3 text-gray-500">
