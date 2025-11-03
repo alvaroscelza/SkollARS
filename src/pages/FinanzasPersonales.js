@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ContactForm from "../components/ContactForm/ContactForm";
+import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
 
 const FinanzasPersonales = () => {
     return (
@@ -59,15 +59,12 @@ const FinanzasPersonales = () => {
                     </div>
                 </div>
             </section>
-            <section id="contacto" className="py-20 bg-white border-t border-gray-200">
-                <ContactForm
-                    useSection={false}
-                    buttonText="Empezar Gratis"
-                    title="¿Listo para cambiar tu relación con el dinero?"
-                    description="Únete a FinApp hoy y empieza a construir un futuro financiero más sólido. Es simple, rápido y gratuito."
-                    showEmailLink={false}
-                />
-            </section>
+            <ContactFormSection
+                buttonText="Empezar Gratis"
+                title="¿Listo para cambiar tu relación con el dinero?"
+                description="Únete a FinApp hoy y empieza a construir un futuro financiero más sólido. Es simple, rápido y gratuito."
+                showEmailLink={false}
+            />
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ContactForm from "../components/ContactForm/ContactForm";
+import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
 
 const GestionEmpresarial = () => {
     return (
@@ -130,23 +130,12 @@ const GestionEmpresarial = () => {
                     </div>
                 </div>
             </section>
-            <ContactForm
-                useSection={true}
-                sectionBg="white"
+            <ContactFormSection
                 buttonText="Pedir Asesoramiento"
                 title="¿Listo para transformar la gestión de su negocio?"
                 description="Complete el formulario y le contactaremos para un diagnóstico gratuito, sin compromiso."
                 showEmailLink={false}
             />
-            <footer className="bg-gray-200 pt-8 pb-6 text-sm text-gray-600">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-xs mb-3 text-gray-500">
-                        Nuestra plataforma de Gestión Empresarial es una solución robusta impulsada por Odoo.
-                        SkollARS es un proveedor de servicios independiente y no está afiliado directamente con Odoo S.A.
-                    </p>
-                    <p>Copyright © {new Date().getFullYear()} SkollARS. Todos los derechos reservados.</p>
-                </div>
-            </footer>
         </div>
     );
 };

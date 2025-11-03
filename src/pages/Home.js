@@ -1,4 +1,4 @@
-import ContactForm from "../components/ContactForm/ContactForm";
+import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
 import Portfolio from "../components/Portfolio";
 import ServiceCard from "../components/ServiceCard";
 import Section from "../components/Section";
@@ -64,7 +64,7 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
-            <ContactForm />
+            <ContactFormSection />
         </>
     );
 };

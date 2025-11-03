@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
 
 const AdopcionMascotas = () => {
     return (
         <div className="min-h-screen">
-            <main id="hero" className="bg-skollars-accent-light">
+            <main id="hero" className="bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-28 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <span className="inline-block px-4 py-1 text-sm font-semibold rounded-full bg-white text-skollars-accent mb-4">Misión Social</span>
+                        <span className="inline-block px-4 py-1 text-sm font-semibold rounded-full bg-skollars-accent-light text-skollars-accent mb-4">Misión Social</span>
                         <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 leading-tight text-gray-900">
                             Conecta Corazones. Dale un Hogar a una Mascota.
                         </h1>
@@ -14,11 +15,11 @@ const AdopcionMascotas = () => {
                             Nuestra plataforma facilita el encuentro entre animales rescatados y familias responsables, promoviendo la adopción y el bienestar animal en Uruguay.
                         </p>
                         <Link to="#proceso" className="btn-primary-gradient">
-                            Comienza a Adoptar o Publicar
+                            Averigua cómo puedes ayudar
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src="https://placehold.co/600x400/a90000/ffffff/png?text=Mascota+Feliz" alt="Mascotas felices buscando hogar" className="rounded-xl shadow-2xl" />
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/mascotas.webp`} alt="Mascotas felices buscando hogar" className="rounded-xl shadow-2xl" />
                     </div>
                 </div>
             </main>
@@ -91,17 +92,12 @@ const AdopcionMascotas = () => {
                     </div>
                 </div>
             </section>
-            <section id="cta" className="py-16 bg-white text-center">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Tu Hogar. Su Esperanza.</h2>
-                    <p className="text-xl text-gray-600 mb-8">
-                        Cada mascota adoptada abre un espacio para rescatar a una más. Únete a la comunidad de SkollARS que cambia vidas.
-                    </p>
-                    <Link to="/#contacto" className="btn-primary-gradient">
-                        Ver Mascotas Disponibles
-                    </Link>
-                </div>
-            </section>
+            <ContactFormSection
+                buttonText="Enviar Mensaje"
+                title="¿Cómo puedes ayudar?"
+                description="Cuéntanos sobre ti y cómo te gustaría colaborar con nuestra misión de conectar mascotas con hogares responsables."
+                showEmailLink={false}
+            />
         </div>
     );
 };
