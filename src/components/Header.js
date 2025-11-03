@@ -8,7 +8,7 @@ const Header = () => {
         <header className="bg-white shadow-md">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                 <Link to="/" className="flex items-center space-x-2">
-                    <img src={`${process.env.PUBLIC_URL || ''}/logo.png`} alt="Logo SkollARS" className="w-8 h-8 rounded-full" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/img/logo.png`} alt="Logo SkollARS" className="w-8 h-8 rounded-full" />
                     <span className="text-xl font-bold text-gray-800">SkollARS</span>
                 </Link>
                 <div className="hidden md:flex space-x-8 items-center text-gray-600 font-medium">
