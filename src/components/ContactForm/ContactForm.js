@@ -9,7 +9,6 @@ const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        topic: "",
         message: ""
     });
     const [showTooltip, setShowTooltip] = useState(false);
@@ -31,7 +30,7 @@ const ContactForm = () => {
             const templateParams = {
                 from_name: formData.name,
                 from_email: formData.email,
-                subject: formData.topic,
+                subject: "Consulta de usuario",
                 message: formData.message,
                 to_email: 'skollars.software.development@gmail.com'
             };
@@ -44,7 +43,7 @@ const ContactForm = () => {
             );
 
             setSubmitResult("Mensaje enviado correctamente");
-            setFormData({ name: "", email: "", topic: "", message: "" });
+            setFormData({ name: "", email: "", message: "" });
         } catch (error) {
             console.error('Error sending email:', error);
             setSubmitResult("Error al enviar el mensaje. Inténtalo de nuevo.");
@@ -84,17 +83,6 @@ const ContactForm = () => {
                             required 
                             value={formData.email}
                             onChange={(e) => handleInputChange('email', e.target.value)}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="subject" className="block text-left text-sm font-medium text-gray-700 mb-1">Asunto:*</label>
-                        <input 
-                            type="text" 
-                            id="subject" 
-                            required 
-                            value={formData.topic}
-                            onChange={(e) => handleInputChange('topic', e.target.value)}
                             className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                         />
                     </div>
