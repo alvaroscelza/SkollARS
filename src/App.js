@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { trackPageView } from "./utils/analytics";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
@@ -11,6 +12,7 @@ const App = () => {
     const location = useLocation();
 
     useEffect(() => {
+        trackPageView(location.pathname + location.search);
         if (location.hash) {
             const scrollToElement = () => {
                 const element = document.querySelector(location.hash);
