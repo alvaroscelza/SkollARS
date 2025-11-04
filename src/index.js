@@ -5,14 +5,12 @@ import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import App from "./App";
 
-const basename = process.env.PUBLIC_URL || "";
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
     <React.StrictMode>
         <HelmetProvider>
-            <BrowserRouter basename={basename}>
+            <BrowserRouter>
                 <App />
             </BrowserRouter>
         </HelmetProvider>

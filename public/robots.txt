@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://skollars.github.io/SkollARS/sitemap.xml
+Sitemap: https://skollars.dev/sitemap.xml

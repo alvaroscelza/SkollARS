@@ -26,7 +26,7 @@ const FinanzasPersonales = () => {
                     "provider": {
                         "@type": "Organization",
                         "name": "SkollARS",
-                        "url": "https://skollars.github.io/SkollARS"
+                        "url": "https://skollars.dev"
                     }
                 }}
             />

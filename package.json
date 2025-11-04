@@ -2,10 +2,8 @@
     "name": "skollars",
     "version": "1.0.1",
     "private": true,
-    "homepage": "/SkollARS",
     "dependencies": {
-        "emailjs-com": "^3.2.0",
-        "gh-pages": "^6.3.0",
+        "@emailjs/browser": "^4.4.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "react-helmet-async": "^2.0.5",
@@ -14,8 +12,6 @@
         "sass": "^1.93.2"
     },
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",

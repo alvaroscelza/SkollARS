@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import contactFormStyles from "./ContactForm.module.scss";
 import { emailConfig } from "../../config/emailConfig";
 
