@@ -56,7 +56,7 @@ const ClientProjects = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-4xl font-bold text-gray-800 mb-4">Experiencia y Casos de Estudio</h2>
                 <p className="text-xl text-gray-500 mb-12 max-w-3xl mx-auto">
-                    Más de una década de experiencia aportando valor en proyectos de ingeniería locales e internacionales.
+                    Más de una década de experiencia aportando valor en proyectos de Ingeniería de Software locales e internacionales.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {clientProjects.map((project, index) => (

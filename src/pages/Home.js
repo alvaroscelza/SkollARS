@@ -56,9 +56,10 @@ const Home = () => {
                     <a href="#contacto" className="btn-primary-gradient text-lg">Hablemos de tu proyecto</a>
                 </div>
             </main>
+            <ClientProjects />
             <Section id="servicios" backgroundColor="white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Nuestros Servicios de Ingeniería y Consultoría</h2>
+                    <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Nuestros Servicios de Ingeniería y Consultoría de Software</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center mb-16">
                         {services.map((service, index) => (
                             <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
@@ -71,7 +72,6 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
-            <ClientProjects />
             <Portfolio />
             <ContactFormSection />
         </>

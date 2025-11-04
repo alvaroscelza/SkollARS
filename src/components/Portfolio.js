@@ -27,7 +27,7 @@ const Portfolio = () => {
     return (
         <Section id="productos" backgroundColor="gray">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 className="text-4xl font-bold text-gray-800 mb-4">Nuestro Portafolio de Soluciones</h2>
+                <h2 className="text-4xl font-bold text-gray-800 mb-4">Nuestros Productos</h2>
                 <p className="text-xl text-gray-500 mb-12 max-w-3xl mx-auto">
                     Desde servicios de consultoría B2B hasta plataformas de impacto social y herramientas para el usuario final.
                 </p>
