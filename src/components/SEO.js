@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ title, description, keywords, canonical, ogImage, type = 'website', structuredData }) => {
+const SEO = ({ title, description, keywords, canonical, ogImage, type = 'website', structuredData, breadcrumbs }) => {
     const siteUrl = 'https://skollars.dev';
     const fullTitle = title ? `${title} | SkollARS` : 'SkollARS - Innovación y Soluciones Tecnológicas';
     const defaultDescription = 'SkollARS ofrece desarrollo de software a medida, soluciones empresariales, consultoría tecnológica y software de gestión. Innovación tecnológica para tu negocio.';
@@ -35,6 +35,11 @@ const SEO = ({ title, description, keywords, canonical, ogImage, type = 'website
             {structuredData && (
                 <script type="application/ld+json">
                     {JSON.stringify(structuredData)}
+                </script>
+            )}
+            {breadcrumbs && (
+                <script type="application/ld+json">
+                    {JSON.stringify(breadcrumbs)}
                 </script>
             )}
         </Helmet>

@@ -32,6 +32,30 @@ const GestionEmpresarial = () => {
                         "url": "https://skollars.dev"
                     }
                 }}
+                breadcrumbs={{
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Inicio",
+                            "item": "https://skollars.dev"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Productos",
+                            "item": "https://skollars.dev/#productos"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Gestión Empresarial - Odoo ERP",
+                            "item": "https://skollars.dev/productos/gestion-empresarial"
+                        }
+                    ]
+                }}
             />
             <main id="home" className="bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-28 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -48,7 +72,7 @@ const GestionEmpresarial = () => {
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src={`${process.env.PUBLIC_URL || ''}/img/odoo.png`} alt="Aplicaciones Odoo disponibles" className="rounded-lg shadow-2xl mb-3" />
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/odoo.png`} alt="Software Odoo ERP - Gestión empresarial integral con módulos de inventario, ventas y facturación" className="rounded-lg shadow-2xl mb-3" loading="lazy" />
                         <p className="text-sm text-gray-500 text-center italic">Todas estas aplicaciones están disponibles para su negocio. Gestione inventario, ventas, facturación, clientes y más desde una plataforma integrada.</p>
                     </div>
                 </div>

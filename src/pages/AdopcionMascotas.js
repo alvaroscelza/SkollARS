@@ -24,6 +24,30 @@ const AdopcionMascotas = () => {
                         "url": "https://skollars.dev"
                     }
                 }}
+                breadcrumbs={{
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Inicio",
+                            "item": "https://skollars.dev"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Productos",
+                            "item": "https://skollars.dev/#productos"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Adopción de Mascotas",
+                            "item": "https://skollars.dev/productos/adopcion-mascotas"
+                        }
+                    ]
+                }}
             />
             <main id="hero" className="bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-28 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -40,7 +64,7 @@ const AdopcionMascotas = () => {
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src={`${process.env.PUBLIC_URL || ''}/img/mascotas.webp`} alt="Mascotas felices buscando hogar" className="rounded-xl shadow-2xl" />
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/mascotas.webp`} alt="Plataforma de adopción de mascotas - Conectando animales rescatados con familias responsables en Uruguay" className="rounded-xl shadow-2xl" loading="lazy" />
                     </div>
                 </div>
             </main>
