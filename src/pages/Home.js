@@ -48,7 +48,6 @@ const Home = () => {
                     <a href="#contacto" className="btn-primary-gradient text-lg">Hablemos de tu proyecto</a>
                 </div>
             </main>
-            <Portfolio />
             <Section id="servicios" backgroundColor="white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Nuestros Servicios de Ingeniería y Consultoría</h2>
@@ -64,6 +63,7 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
+            <Portfolio />
             <ContactFormSection />
         </>
     );

@@ -9,7 +9,6 @@ const ContactFormSection = ({
     return (
         <section id="contacto" className="py-20 bg-white border-t border-gray-200">
             <ContactForm
-                useSection={false}
                 buttonText={buttonText}
                 title={title}
                 description={description}

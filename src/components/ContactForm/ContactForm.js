@@ -2,15 +2,12 @@ import React, { useEffect, useState, useRef } from "react";
 import emailjs from 'emailjs-com';
 import contactFormStyles from "./ContactForm.module.scss";
 import { emailConfig } from "../../config/emailConfig";
-import Section from "../Section";
 
 const ContactForm = ({
     buttonText = "Enviar Mensaje",
     title = "Conectemos.",
     description = "Por favor, rellene el siguiente formulario, y nos pondremos en contacto.",
-    showEmailLink = true,
-    useSection = true,
-    sectionBg = "gray"
+    showEmailLink = true
 }) => {
     const form = useRef(null);
     const [formData, setFormData] = useState({
@@ -102,7 +99,7 @@ const ContactForm = ({
         </form>
     );
 
-    const content = (
+    return (
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">{title}</h2>
             <p className="text-lg text-gray-600 mb-6">
@@ -116,16 +113,6 @@ const ContactForm = ({
             {formUi}
         </div>
     );
-
-    if (useSection) {
-        return (
-            <Section id="contacto" backgroundColor={sectionBg}>
-                {content}
-            </Section>
-        );
-    }
-
-    return content;
 };
 
 const ToolTip = ({ message, hideFunction }) => {
