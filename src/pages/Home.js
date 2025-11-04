@@ -1,5 +1,6 @@
 import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
 import Portfolio from "../components/Portfolio";
+import ClientProjects from "../components/ClientProjects";
 import ServiceCard from "../components/ServiceCard";
 import Section from "../components/Section";
 import SEO from "../components/SEO";
@@ -70,6 +71,7 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
+            <ClientProjects />
             <Portfolio />
             <ContactFormSection />
         </>
