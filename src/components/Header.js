@@ -1,9 +1,6 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-    const location = useLocation();
-    const isHome = location.pathname === "/";
-
     return (
         <header className="bg-white shadow-md">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
@@ -26,7 +23,7 @@ const Header = () => {
                             <Link to="/productos/adopcion-mascotas" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Adopción de Mascotas</Link>
                         </div>
                     </div>
-                    <Link to={isHome ? "#contacto" : "/#contacto"} className="btn-contacto">Contacto</Link>
+                    <Link to="/#contacto" className="btn-contacto">Contacto</Link>
                 </div>
                 <button className="md:hidden text-gray-600 hover:text-skollars-accent">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

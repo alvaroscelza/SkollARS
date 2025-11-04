@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
@@ -7,6 +8,28 @@ import AdopcionMascotas from "./pages/AdopcionMascotas";
 import GestionEmpresarial from "./pages/GestionEmpresarial";
 
 const App = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const scrollToElement = () => {
+                const element = document.querySelector(location.hash);
+                if (element) {
+                    const headerOffset = 80;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            };
+            setTimeout(scrollToElement, 100);
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [location]);
+
     return (
         <>
             <Header />
