@@ -4,42 +4,42 @@ import Section from "./Section";
 const ClientProjects = () => {
     const clientProjects = [
         {
-            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>',
+            image: "companies_logos/amoeb_ai.jpg",
             title: "Amoeba AI",
             description: "Desarrollo de sistema financiero innovador utilizando AWS Lambdas y arquitectura Pipes and Filters. Implementación de RAG (Retrieval-Augmented Generation) para chat con IA especializado en información financiera.",
             link: "https://www.amoeba.ai/",
             linkText: "Ver Sitio →"
         },
         {
-            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>',
+            image: "companies_logos/elasticHotel.png",
             title: "Elastic Hotel",
             description: "Desarrollo de plataforma de gestión hotelera con múltiples versiones, incluyendo investigación en IA para optimización de procesos.",
             link: "https://www.elastichotel.com/",
             linkText: "Ver Sitio →"
         },
         {
-            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>',
+            image: "companies_logos/create-thrive.jpg",
             title: "CreateThrive",
             description: "Proyectos para clientes internacionales incluyendo Sunpower (InstantDesign), Kard (RewardsAPIs), Convex Labs (NFT Theft Detection) y No Nerds No Problem (Medl).",
             link: "https://www.createthrive.com/",
             linkText: "Ver Sitio →"
         },
         {
-            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>',
+            image: "companies_logos/ripio.png",
             title: "Ripio",
             description: "Múltiples proyectos en plataforma de criptomonedas: OTC, Paymatico Webhooks, Eventually, documentación de APIs y servicios, Conductor, entre otros.",
             link: "https://www.ripio.com/ar/",
             linkText: "Ver Sitio →"
         },
         {
-            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>',
+            image: "companies_logos/bps.png",
             title: "Banco de Previsión Social (BPS)",
             description: "Proyectos en sistema de seguridad social: SDES Conectados, GRP, y mejoras en procesos de desarrollo.",
             link: "https://www.bps.gub.uy/",
             linkText: "Ver Sitio →"
         },
         {
-            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>',
+            image: "companies_logos/dnm.gif",
             title: "Dirección Nacional de Migración (DNM)",
             description: "Desarrollo de sistemas de registro de procedimientos migratorios, mejorando la gestión de procesos administrativos.",
             link: "https://www.gub.uy/migracion",
@@ -62,7 +62,8 @@ const ClientProjects = () => {
                     {clientProjects.map((project, index) => (
                         <PortfolioCard 
                             key={index} 
-                            icon={project.icon} 
+                            image={project.image}
+                            icon={project.icon}
                             title={project.title} 
                             description={project.description} 
                             link={project.link} 
