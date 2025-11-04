@@ -2,6 +2,7 @@ import ContactFormSection from "../components/ContactFormSection/ContactFormSect
 import Portfolio from "../components/Portfolio";
 import ServiceCard from "../components/ServiceCard";
 import Section from "../components/Section";
+import SEO from "../components/SEO";
 
 const Home = () => {
     const services = [
@@ -37,6 +38,12 @@ const Home = () => {
 
     return (
         <>
+            <SEO
+                title="Innovación y Soluciones Tecnológicas"
+                description="SkollARS ofrece desarrollo de software a medida, soluciones estándar de gestión empresarial (RRHH, Finanzas, Inventario, POS), consultoría tecnológica (Design Thinking, Optimización de Negocios) y software de impacto social. Innovación tecnológica para tu negocio en Uruguay."
+                keywords="desarrollo de software, software a medida, gestión empresarial, software de inventario, punto de venta, CRM, consultoría tecnológica, design thinking, optimización de negocios, sistemas de información, Uruguay"
+                canonical="/"
+            />
             <main id="home" className="bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 pb-8">
                     <h1 className="text-6xl sm:text-7xl font-extrabold mb-4 leading-tight text-gray-800">

@@ -1,9 +1,35 @@
 import { Link } from "react-router-dom";
 import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
+import SEO from "../components/SEO";
 
 const FinanzasPersonales = () => {
     return (
         <div className="min-h-screen">
+            <SEO
+                title="FinApp - Software de Finanzas Personales"
+                description="Toma el control de tu dinero sin complicaciones. FinApp te ayuda a gestionar ingresos, gastos e inversiones de forma simple y efectiva. Ve en qué gastas tu dinero y alcanza tus metas de ahorro más rápido."
+                keywords="finanzas personales, software de finanzas, gestión de dinero, presupuesto personal, control de gastos, ahorro, inversiones, aplicación de finanzas, Uruguay"
+                canonical="/productos/finanzas-personales"
+                ogImage="/img/finapp.png"
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "SoftwareApplication",
+                    "name": "FinApp",
+                    "applicationCategory": "FinanceApplication",
+                    "description": "Software de finanzas personales para gestionar ingresos, gastos e inversiones de forma simple y efectiva.",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "0",
+                        "priceCurrency": "USD"
+                    },
+                    "operatingSystem": "Web",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "SkollARS",
+                        "url": "https://skollars.github.io/SkollARS"
+                    }
+                }}
+            />
             <main id="hero" className="bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 md:pt-24 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div>

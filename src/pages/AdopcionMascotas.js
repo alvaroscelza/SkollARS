@@ -1,9 +1,30 @@
 import { Link } from "react-router-dom";
 import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
+import SEO from "../components/SEO";
 
 const AdopcionMascotas = () => {
     return (
         <div className="min-h-screen">
+            <SEO
+                title="Plataforma de Adopción de Mascotas"
+                description="Conecta corazones y dale un hogar a una mascota. Plataforma que facilita el encuentro entre animales rescatados y familias responsables, promoviendo la adopción y el bienestar animal en Uruguay."
+                keywords="adopción de mascotas, adopción de perros, adopción de gatos, animales rescatados, bienestar animal, plataforma de adopción, Uruguay, refugio de animales"
+                canonical="/productos/adopcion-mascotas"
+                ogImage="/img/mascotas.webp"
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "WebApplication",
+                    "name": "Plataforma de Adopción de Mascotas",
+                    "description": "Plataforma que conecta animales rescatados con familias responsables, promoviendo la adopción y el bienestar animal en Uruguay.",
+                    "applicationCategory": "SocialNetworkingApplication",
+                    "operatingSystem": "Web",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "SkollARS",
+                        "url": "https://skollars.github.io/SkollARS"
+                    }
+                }}
+            />
             <main id="hero" className="bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-28 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div>

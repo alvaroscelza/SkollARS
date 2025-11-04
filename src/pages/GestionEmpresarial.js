@@ -1,9 +1,38 @@
 import { Link } from "react-router-dom";
 import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
+import SEO from "../components/SEO";
 
 const GestionEmpresarial = () => {
     return (
         <div className="min-h-screen" style={{ backgroundColor: '#f7f7f7' }}>
+            <SEO
+                title="Software Integral de Gestión Empresarial - Odoo"
+                description="Deje atrás el caos de las planillas. Gestione ventas, inventario, facturación y clientes desde un solo lugar. Software integral para su negocio con implementación, hosting y mantenimiento. Impulsado por Odoo."
+                keywords="gestión empresarial, software de gestión, Odoo, inventario, punto de venta, facturación electrónica, CRM, gestión de clientes, software para pymes, e-commerce, ERP, Uruguay"
+                canonical="/productos/gestion-empresarial"
+                ogImage="/img/odoo.png"
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "SoftwareApplication",
+                    "name": "Software Integral de Gestión Empresarial",
+                    "applicationCategory": "BusinessApplication",
+                    "description": "Software ERP integral para gestionar ventas, inventario, facturación y clientes. Impulsado por Odoo.",
+                    "operatingSystem": "Web",
+                    "featureList": [
+                        "Gestión de Inventario",
+                        "Punto de Venta (POS)",
+                        "CRM y Ventas",
+                        "Facturación Electrónica",
+                        "E-Commerce",
+                        "Gestión de Clientes"
+                    ],
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "SkollARS",
+                        "url": "https://skollars.github.io/SkollARS"
+                    }
+                }}
+            />
             <main id="home" className="bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 md:pt-28 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
