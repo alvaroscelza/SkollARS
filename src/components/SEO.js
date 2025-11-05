@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet-async';
 const SEO = ({ title, description, keywords, canonical, ogImage, type = 'website', structuredData, breadcrumbs }) => {
     const siteUrl = 'https://skollars.dev';
     const fullTitle = title ? `${title} | SkollARS` : 'SkollARS - Innovación y Soluciones Tecnológicas';
-    const defaultDescription = 'SkollARS ofrece desarrollo de software a medida, soluciones empresariales, consultoría tecnológica y software de gestión. Innovación tecnológica para tu negocio.';
+    const defaultDescription = 'SkollARS ofrece desarrollo de software a medida, páginas web, sitios web, soluciones empresariales, consultoría tecnológica y software de gestión. Innovación tecnológica para tu negocio.';
     const finalDescription = description || defaultDescription;
-    const defaultKeywords = 'software a medida, desarrollo de software, consultoría tecnológica, gestión empresarial, software de inventario, punto de venta, CRM, finanzas personales, adopción de mascotas, Odoo, Uruguay';
+    const defaultKeywords = 'página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, software a medida, desarrollo de software, consultoría tecnológica, gestión empresarial, software de inventario, punto de venta, CRM, finanzas personales, adopción de mascotas, Odoo, Uruguay';
     const finalKeywords = keywords || defaultKeywords;
     const canonicalUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
     const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/img/logo.png`;
@@ -15,6 +15,7 @@ const SEO = ({ title, description, keywords, canonical, ogImage, type = 'website
             <title>{fullTitle}</title>
             <meta name="description" content={finalDescription} />
             <meta name="keywords" content={finalKeywords} />
+            <link rel="icon" type="image/x-icon" href={`${siteUrl}/favicon.ico`} />
             <link rel="canonical" href={canonicalUrl} />
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={finalDescription} />

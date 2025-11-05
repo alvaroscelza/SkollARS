@@ -41,8 +41,8 @@ const Home = () => {
         <>
             <SEO
                 title="Innovación y Soluciones Tecnológicas"
-                description="SkollARS ofrece desarrollo de software a medida, soluciones estándar de gestión empresarial (RRHH, Finanzas, Inventario, POS), consultoría tecnológica (Design Thinking, Optimización de Negocios) y software de impacto social. Innovación tecnológica para tu negocio en Uruguay."
-                keywords="desarrollo de software, software a medida, gestión empresarial, software de inventario, punto de venta, CRM, consultoría tecnológica, design thinking, optimización de negocios, sistemas de información, Uruguay"
+                description="SkollARS ofrece desarrollo de software a medida, páginas web, sitios web, soluciones estándar de gestión empresarial (RRHH, Finanzas, Inventario, POS), consultoría tecnológica (Design Thinking, Optimización de Negocios) y software de impacto social. Innovación tecnológica para tu negocio en Uruguay."
+                keywords="página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, desarrollo de software, software a medida, gestión empresarial, software de inventario, punto de venta, CRM, consultoría tecnológica, design thinking, optimización de negocios, sistemas de información, Uruguay"
                 canonical="/"
             />
             <main id="home" className="bg-white">
