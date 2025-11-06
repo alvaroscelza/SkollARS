@@ -1,4 +1,4 @@
-import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../ContactForm/ContactForm.jsx";
 
 const ContactFormSection = ({
     buttonText = "Enviar Mensaje",

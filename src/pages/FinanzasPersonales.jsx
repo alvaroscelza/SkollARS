@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
-import SEO from "../components/SEO";
+import ContactFormSection from "../components/ContactFormSection/ContactFormSection.jsx";
+import SEO from "../components/SEO.jsx";
 
 const FinanzasPersonales = () => {
     return (

@@ -1,5 +1,5 @@
-import PortfolioCard from "./PortfolioCard";
-import Section from "./Section";
+import PortfolioCard from "./PortfolioCard.jsx";
+import Section from "./Section.jsx";
 
 const ClientProjects = () => {
     const clientProjects = [

@@ -1,13 +1,13 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { trackPageView } from "./utils/analytics";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import FinanzasPersonales from "./pages/FinanzasPersonales";
-import AdopcionMascotas from "./pages/AdopcionMascotas";
-import GestionEmpresarial from "./pages/GestionEmpresarial";
-import TurnoYa from "./pages/TurnoYa";
+import Header from "./components/Header.jsx";
+import Home from "./pages/Home.jsx";
+import Footer from "./components/Footer.jsx";
+import FinanzasPersonales from "./pages/FinanzasPersonales.jsx";
+import AdopcionMascotas from "./pages/AdopcionMascotas.jsx";
+import GestionEmpresarial from "./pages/GestionEmpresarial.jsx";
+import TurnoYa from "./pages/TurnoYa.jsx";
 
 const App = () => {
     const location = useLocation();

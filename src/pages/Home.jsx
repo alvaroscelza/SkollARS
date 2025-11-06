@@ -1,9 +1,9 @@
-import ContactFormSection from "../components/ContactFormSection/ContactFormSection";
-import Portfolio from "../components/Portfolio";
-import ClientProjects from "../components/ClientProjects";
-import ServiceCard from "../components/ServiceCard";
-import Section from "../components/Section";
-import SEO from "../components/SEO";
+import ContactFormSection from "../components/ContactFormSection/ContactFormSection.jsx";
+import Portfolio from "../components/Portfolio.jsx";
+import ClientProjects from "../components/ClientProjects.jsx";
+import ServiceCard from "../components/ServiceCard.jsx";
+import Section from "../components/Section.jsx";
+import SEO from "../components/SEO.jsx";
 
 const Home = () => {
     const services = [
