@@ -10,7 +10,7 @@ const TurnoYa = () => {
                 description="La agenda que usan peluqueras, terapeutas y consultores en Uruguay y Latam. Gestiona tus turnos, reduce no shows y aumenta tus ingresos. Agenda digital profesional que funciona desde tu celular."
                 keywords="agenda digital, sistema de turnos, agendamiento online, software para peluquerías, software para terapeutas, agenda para consultores, turnos online, reserva de citas, gestión de turnos, Uruguay, Latinoamérica"
                 canonical="/productos/turnoya"
-                ogImage="/img/turno_ya.png"
+                ogImage="/img/products/turno_ya.png"
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "SoftwareApplication",
@@ -62,7 +62,7 @@ const TurnoYa = () => {
                     <div>
                         <span className="inline-block px-4 py-1 text-sm font-semibold rounded-full bg-skollars-accent-light text-skollars-accent mb-4">TurnoYa</span>
                         <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 leading-tight text-gray-900">
-                            La Agenda que Usan los Profesionales que Más Ingresan.
+                            La Agenda que Usan los emprendedores más exitosos.
                         </h1>
                         <p className="text-xl text-gray-600 mb-8">
                             Gestiona tus turnos desde tu celular, reduce no shows y aumenta tus ingresos. La plataforma de agendamiento que transforma la forma en que trabajan peluqueras, terapeutas y consultores en Uruguay y Latam.
@@ -72,7 +72,7 @@ const TurnoYa = () => {
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src={`${process.env.PUBLIC_URL || ''}/img/turno_ya.png`} alt="TurnoYa - Sistema de agendamiento digital para profesionales" className="rounded-xl shadow-2xl" loading="lazy" />
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/products/turno_ya.png`} alt="TurnoYa - Sistema de agendamiento digital para profesionales" className="rounded-xl shadow-2xl" loading="lazy" />
                     </div>
                 </div>
             </main>
@@ -116,12 +116,12 @@ const TurnoYa = () => {
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold text-gray-800 mb-4">Hecho para Profesionales que Crecen</h2>
                         <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-                            Ya sea que trabajes sola o con un equipo, TurnoYa se adapta a tu negocio.
+                            Ya sea que trabajes solo o con un equipo, TurnoYa se adapta a tu negocio.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="p-6 bg-white rounded-xl shadow-lg">
-                            <h3 className="text-xl font-semibold mb-2 text-skollars-accent">Peluqueras y Salones</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-skollars-accent">Peluquerías y Salones</h3>
                             <p className="text-gray-600">Gestiona cortes, tinturas, tratamientos y más. Múltiples profesionales, múltiples servicios, una sola agenda.</p>
                         </div>
                         <div className="p-6 bg-white rounded-xl shadow-lg">
