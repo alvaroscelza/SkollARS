@@ -16,10 +16,12 @@ const Home = () => {
             icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.526.321 1.066.52 1.577.52h.001zm-.001 5.82a2 2 0 104 0 2 2 0 00-4 0z"></path></svg>',
             title: "Desarrollo A Medida",
             description: "Desarrollo de Software completamente a medida. Incluye ingeniería de requerimientos, donde le ayudaremos a explorar las mejores ideas para que su nuevo software potencie su negocio."
-        }
-    ];
-
-    const consultingServices = [
+        },
+        {
+            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>',
+            title: "Presencia Digital en Internet",
+            description: "Creamos su página web, la configuramos en Google, visibilizamos sus redes sociales y mejoramos su publicidad en Facebook e Instagram. Más visibilidad, más clientes."
+        },
         {
             icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>',
             title: "Design Thinking",
@@ -41,8 +43,8 @@ const Home = () => {
         <>
             <SEO
                 title="Innovación y Soluciones Tecnológicas"
-                description="SkollARS ofrece desarrollo de software a medida, páginas web, sitios web, soluciones estándar de gestión empresarial (RRHH, Finanzas, Inventario, POS), consultoría tecnológica (Design Thinking, Optimización de Negocios) y software de impacto social. Innovación tecnológica para tu negocio en Uruguay."
-                keywords="página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, desarrollo de software, software a medida, gestión empresarial, software de inventario, punto de venta, CRM, consultoría tecnológica, design thinking, optimización de negocios, sistemas de información, Uruguay"
+                description="SkollARS ofrece desarrollo de software a medida, páginas web, sitios web, presencia digital en internet (Google Business Profile, redes sociales, SEO, publicidad), soluciones estándar de gestión empresarial (RRHH, Finanzas, Inventario, POS), consultoría tecnológica (Design Thinking, Optimización de Negocios) y software de impacto social. Innovación tecnológica para tu negocio en Uruguay."
+                keywords="página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, Google Business Profile, presencia digital, redes sociales para empresas, publicidad digital, SEO, desarrollo de software, software a medida, gestión empresarial, software de inventario, punto de venta, CRM, consultoría tecnológica, design thinking, optimización de negocios, sistemas de información, Uruguay"
                 canonical="/"
             />
             <main id="home" className="bg-white">
@@ -60,13 +62,8 @@ const Home = () => {
             <Section id="servicios" backgroundColor="white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Nuestros Servicios de Ingeniería y Consultoría de Software</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center mb-16">
-                        {services.map((service, index) => (
-                            <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
-                        ))}
-                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-                        {consultingServices.map((service, index) => (
+                        {services.map((service, index) => (
                             <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
                         ))}
                     </div>

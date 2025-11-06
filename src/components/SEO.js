@@ -5,7 +5,7 @@ const SEO = ({ title, description, keywords, canonical, ogImage, type = 'website
     const fullTitle = title ? `${title} | SkollARS` : 'SkollARS - Innovación y Soluciones Tecnológicas';
     const defaultDescription = 'SkollARS ofrece desarrollo de software a medida, páginas web, sitios web, soluciones empresariales, consultoría tecnológica y software de gestión. Innovación tecnológica para tu negocio.';
     const finalDescription = description || defaultDescription;
-    const defaultKeywords = 'página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, software a medida, desarrollo de software, consultoría tecnológica, gestión empresarial, software de inventario, punto de venta, CRM, finanzas personales, adopción de mascotas, Odoo, Uruguay';
+    const defaultKeywords = 'página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, Google Business Profile, presencia digital, redes sociales para empresas, publicidad digital, SEO, software a medida, desarrollo de software, consultoría tecnológica, gestión empresarial, software de inventario, punto de venta, CRM, finanzas personales, adopción de mascotas, Odoo, Uruguay';
     const finalKeywords = keywords || defaultKeywords;
     const canonicalUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
     const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/img/logo.png`;
