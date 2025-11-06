@@ -22,6 +22,7 @@ const Header = () => {
                             <Link to="/productos/gestion-empresarial" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Odoo ERP</Link>
                             <Link to="/productos/finanzas-personales" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">FinApp</Link>
                             <Link to="/productos/adopcion-mascotas" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Adopción de Mascotas</Link>
+                            <Link to="/productos/turnoya" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">TurnoYa</Link>
                         </div>
                     </div>
                     <Link to="/#contacto" className="btn-contacto">Contacto</Link>

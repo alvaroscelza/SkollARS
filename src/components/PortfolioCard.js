@@ -24,7 +24,19 @@ const PortfolioCard = ({ icon, image, title, description, link, note, linkText }
         <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.01]">
             {image ? (
                 <div className="mb-4 flex justify-center">
-                    <img src={`${process.env.PUBLIC_URL || ''}/img/${image}`} alt={title} className="h-16 w-auto object-contain" />
+                    {image === 'companies_logos/TurnoYa.png' ? (
+                        <img 
+                            src={`${process.env.PUBLIC_URL || ''}/img/${image}`} 
+                            alt={title} 
+                            className="h-16 w-16 rounded-full object-cover" 
+                        />
+                    ) : (
+                        <img 
+                            src={`${process.env.PUBLIC_URL || ''}/img/${image}`} 
+                            alt={title} 
+                            className="h-16 w-auto object-contain" 
+                        />
+                    )}
                 </div>
             ) : (
                 <div className="icon-lg text-skollars-accent mx-auto mb-4" dangerouslySetInnerHTML={{ __html: icon }} />

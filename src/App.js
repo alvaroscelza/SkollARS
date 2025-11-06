@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import FinanzasPersonales from "./pages/FinanzasPersonales";
 import AdopcionMascotas from "./pages/AdopcionMascotas";
 import GestionEmpresarial from "./pages/GestionEmpresarial";
+import TurnoYa from "./pages/TurnoYa";
 
 const App = () => {
     const location = useLocation();
@@ -40,6 +41,7 @@ const App = () => {
                 <Route path="/productos/finanzas-personales" element={<FinanzasPersonales />} />
                 <Route path="/productos/adopcion-mascotas" element={<AdopcionMascotas />} />
                 <Route path="/productos/gestion-empresarial" element={<GestionEmpresarial />} />
+                <Route path="/productos/turnoya" element={<TurnoYa />} />
             </Routes>
             <Footer />
         </>

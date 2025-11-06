@@ -21,6 +21,12 @@ const Portfolio = () => {
             title: "Conexión de Adoptantes y Rescatistas",
             description: "Una plataforma que conecta personas que encuentran animales callejeros con adoptantes comprometidos, fomentando el cambio social.",
             link: "/productos/adopcion-mascotas"
+        },
+        {
+            image: "companies_logos/TurnoYa.png",
+            title: "TurnoYa - Sistema de Agendamiento",
+            description: "La agenda digital que usan peluqueras, terapeutas y consultores en Uruguay y Latam. Gestiona turnos, reduce no shows y aumenta ingresos.",
+            link: "/productos/turnoya"
         }
     ];
 

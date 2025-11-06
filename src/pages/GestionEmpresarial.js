@@ -10,7 +10,7 @@ const GestionEmpresarial = () => {
                 description="Deje atrás el caos de las planillas. Gestione ventas, inventario, facturación y clientes desde un solo lugar. Software integral para su negocio con implementación, hosting y mantenimiento. Impulsado por Odoo."
                 keywords="gestión empresarial, software de gestión, Odoo, inventario, punto de venta, facturación electrónica, CRM, gestión de clientes, software para pymes, e-commerce, ERP, Uruguay"
                 canonical="/productos/gestion-empresarial"
-                ogImage="/img/odoo.png"
+                ogImage="/img/products/odoo.png"
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "SoftwareApplication",
@@ -72,7 +72,7 @@ const GestionEmpresarial = () => {
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src={`${process.env.PUBLIC_URL || ''}/img/odoo.png`} alt="Software Odoo ERP - Gestión empresarial integral con módulos de inventario, ventas y facturación" className="rounded-lg shadow-2xl mb-3" loading="lazy" />
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/products/odoo.png`} alt="Software Odoo ERP - Gestión empresarial integral con módulos de inventario, ventas y facturación" className="rounded-lg shadow-2xl mb-3" loading="lazy" />
                         <p className="text-sm text-gray-500 text-center italic">Todas estas aplicaciones están disponibles para su negocio. Gestione inventario, ventas, facturación, clientes y más desde una plataforma integrada.</p>
                     </div>
                 </div>

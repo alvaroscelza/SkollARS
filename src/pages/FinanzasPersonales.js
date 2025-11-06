@@ -10,7 +10,7 @@ const FinanzasPersonales = () => {
                 description="Toma el control de tu dinero sin complicaciones. FinApp te ayuda a gestionar ingresos, gastos e inversiones de forma simple y efectiva. Ve en qué gastas tu dinero y alcanza tus metas de ahorro más rápido."
                 keywords="finanzas personales, software de finanzas, gestión de dinero, presupuesto personal, control de gastos, ahorro, inversiones, aplicación de finanzas, Uruguay"
                 canonical="/productos/finanzas-personales"
-                ogImage="/img/finapp.png"
+                ogImage="/img/products/finapp.png"
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "SoftwareApplication",
@@ -69,7 +69,7 @@ const FinanzasPersonales = () => {
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src={`${process.env.PUBLIC_URL || ''}/img/finapp.png`} alt="Dashboard de Finanzas Personales - Software de gestión financiera personal" className="rounded-xl shadow-2xl border-4 border-gray-800" loading="lazy" />
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/products/finapp.png`} alt="Dashboard de Finanzas Personales - Software de gestión financiera personal" className="rounded-xl shadow-2xl border-4 border-gray-800" loading="lazy" />
                     </div>
                 </div>
             </main>

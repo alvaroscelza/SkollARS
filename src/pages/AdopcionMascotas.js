@@ -10,7 +10,7 @@ const AdopcionMascotas = () => {
                 description="Conecta corazones y dale un hogar a una mascota. Plataforma que facilita el encuentro entre animales rescatados y familias responsables, promoviendo la adopción y el bienestar animal en Uruguay."
                 keywords="adopción de mascotas, adopción de perros, adopción de gatos, animales rescatados, bienestar animal, plataforma de adopción, Uruguay, refugio de animales"
                 canonical="/productos/adopcion-mascotas"
-                ogImage="/img/mascotas.webp"
+                ogImage="/img/products/mascotas.webp"
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "WebApplication",
@@ -64,7 +64,7 @@ const AdopcionMascotas = () => {
                         </Link>
                     </div>
                     <div className="hidden md:block">
-                        <img src={`${process.env.PUBLIC_URL || ''}/img/mascotas.webp`} alt="Plataforma de adopción de mascotas - Conectando animales rescatados con familias responsables en Uruguay" className="rounded-xl shadow-2xl" loading="lazy" />
+                        <img src={`${process.env.PUBLIC_URL || ''}/img/products/mascotas.webp`} alt="Plataforma de adopción de mascotas - Conectando animales rescatados con familias responsables en Uruguay" className="rounded-xl shadow-2xl" loading="lazy" />
                     </div>
                 </div>
             </main>
