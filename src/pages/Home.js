@@ -36,6 +36,11 @@ const Home = () => {
             icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 12l2-2 2 2 2-2 2 2M15 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-2m-2-5h-2"></path></svg>',
             title: "Sistemas de Información",
             description: "Análisis estratégico, cadena de valor, posición en TI/IS, análisis FODA, etc. Pensado para medianos o grandes negocios."
+        },
+        {
+            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>',
+            title: "Automatización por IA",
+            description: "Inteligencia artificial que le devuelve horas y ganancias. No pierda más tiempo buscando datos, reciba predicciones al instante: cuándo se acabará el stock, cuál será el precio de los insumos el año que viene, cuánto facturará cada cliente el próximo trimestre."
         }
     ];
 
@@ -43,8 +48,8 @@ const Home = () => {
         <>
             <SEO
                 title="Innovación y Soluciones Tecnológicas"
-                description="SkollARS ofrece desarrollo de software a medida, páginas web, sitios web, presencia digital en internet (Google Business Profile, redes sociales, SEO, publicidad), soluciones estándar de gestión empresarial (RRHH, Finanzas, Inventario, POS), consultoría tecnológica (Design Thinking, Optimización de Negocios) y software de impacto social. Innovación tecnológica para tu negocio en Uruguay."
-                keywords="página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, Google Business Profile, presencia digital, redes sociales para empresas, publicidad digital, SEO, desarrollo de software, software a medida, gestión empresarial, software de inventario, punto de venta, CRM, consultoría tecnológica, design thinking, optimización de negocios, sistemas de información, Uruguay"
+                description="SkollARS ofrece desarrollo de software a medida, páginas web, sitios web, presencia digital en internet (Google Business Profile, redes sociales, SEO, publicidad), soluciones estándar de gestión empresarial (RRHH, Finanzas, Inventario, POS), automatización por IA, consultoría tecnológica (Design Thinking, Optimización de Negocios) y software de impacto social. Innovación tecnológica para tu negocio en Uruguay."
+                keywords="página web, sitio web, página web para mi empresa, hacer página web, crear página web, desarrollo de páginas web, desarrollo de sitios web, página web para pymes, sitio web para empresas, Google Business Profile, presencia digital, redes sociales para empresas, publicidad digital, SEO, desarrollo de software, software a medida, gestión empresarial, software de inventario, punto de venta, CRM, automatización por IA, inteligencia artificial, automatización de procesos, consultoría tecnológica, design thinking, optimización de negocios, sistemas de información, Uruguay"
                 canonical="/"
             />
             <main id="home" className="bg-white">
