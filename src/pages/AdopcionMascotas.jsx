@@ -59,7 +59,7 @@ const AdopcionMascotas = () => {
                         <p className="text-xl text-gray-600 mb-8">
                             Nuestra plataforma facilita el encuentro entre animales rescatados y familias responsables, promoviendo la adopción y el bienestar animal en Uruguay.
                         </p>
-                        <Link to="#proceso" className="btn-primary-gradient">
+                        <Link to="#contacto" className="btn-primary-gradient">
                             Averigua cómo puedes ayudar
                         </Link>
                     </div>

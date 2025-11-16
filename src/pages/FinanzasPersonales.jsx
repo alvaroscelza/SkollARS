@@ -64,7 +64,7 @@ const FinanzasPersonales = () => {
                         <p className="text-xl text-gray-600 mb-8">
                             La herramienta que convierte el estrés financiero en claridad. Ve en qué gastas tu dinero y alcanza tus metas de ahorro más rápido.
                         </p>
-                        <Link to="/#contacto" className="btn-primary-gradient">
+                        <Link to="#contacto" className="btn-primary-gradient">
                             Empieza a Organizarte Gratis
                         </Link>
                     </div>

@@ -67,7 +67,7 @@ const GestionEmpresarial = () => {
                         <p className="text-xl sm:text-2xl font-light text-gray-600 mb-10">
                             Gestione ventas, inventario, facturación y clientes desde un solo lugar.
                         </p>
-                        <Link to="/#contacto" className="btn-primary-gradient text-lg px-8 py-3 shadow-lg inline-block">
+                        <Link to="#contacto" className="btn-primary-gradient text-lg px-8 py-3 shadow-lg inline-block">
                             Solicitar Asesoramiento Gratuito
                         </Link>
                     </div>

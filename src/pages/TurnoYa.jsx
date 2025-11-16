@@ -67,7 +67,7 @@ const TurnoYa = () => {
                         <p className="text-xl text-gray-600 mb-8">
                             Gestiona tus turnos desde tu celular, reduce no shows y aumenta tus ingresos. La plataforma de agendamiento que transforma la forma en que trabajan peluqueras, terapeutas y consultores en Uruguay y Latam.
                         </p>
-                        <Link to="/#contacto" className="btn-primary-gradient">
+                        <Link to="#contacto" className="btn-primary-gradient">
                             Empieza a Agendar Hoy
                         </Link>
                     </div>

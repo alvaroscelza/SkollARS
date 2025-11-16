@@ -17,16 +17,16 @@ const Portfolio = () => {
             link: "/productos/finanzas-personales"
         },
         {
-            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>',
-            title: "Conexión de Adoptantes y Rescatistas",
-            description: "Una plataforma que conecta personas que encuentran animales callejeros con adoptantes comprometidos, fomentando el cambio social.",
-            link: "/productos/adopcion-mascotas"
-        },
-        {
             image: "companies_logos/TurnoYa.png",
             title: "TurnoYa - Sistema de Agendamiento",
             description: "La agenda digital que usan peluqueras, terapeutas y consultores en Uruguay y Latam. Gestiona turnos, reduce no shows y aumenta ingresos.",
             link: "/productos/turnoya"
+        },
+        {
+            icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>',
+            title: "Conexión de Adoptantes y Rescatistas",
+            description: "Una plataforma que conecta personas que encuentran animales callejeros con adoptantes comprometidos, fomentando el cambio social.",
+            link: "/productos/adopcion-mascotas"
         }
     ];
 
