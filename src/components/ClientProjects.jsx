@@ -7,7 +7,7 @@ const ClientProjects = () => {
             image: "companies_logos/amoeb_ai.jpg",
             title: "Amoeba AI",
             description: "Desarrollo de sistema financiero innovador utilizando AWS Lambdas y arquitectura Pipes and Filters. Implementación de RAG (Retrieval-Augmented Generation) para chat con IA especializado en información financiera.",
-            link: "https://www.amoeba.ai/",
+            link: "https://www.amoeb.ai/",
             linkText: "Ver Sitio →"
         },
         {
